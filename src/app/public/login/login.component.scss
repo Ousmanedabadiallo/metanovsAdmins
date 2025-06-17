@@ -1,0 +1,16 @@
+.shadown{
+    
+    box-shadow: 0px 0px 1px #555555;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.bg-success{
+    background-color: green;
+    color: #ffffff;
+    font-weight: bold;
+    border-left: green 5px solid;
+    border-right: green 5px solid;
+    background: linear-gradient(217deg, green, rgba(255,0,0,0) 70.71%),
+    linear-gradient(120deg,#f4bd0e ,green, rgba(0,255,0,0) 190.71%),
+    linear-gradient(336deg, green, rgba(0,0,255,0) 70.71%);
+            }

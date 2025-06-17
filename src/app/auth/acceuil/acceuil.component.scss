@@ -1,0 +1,55 @@
+.card-fashion{min-height:500px;border-radius:0;box-shadow:none;margin:0;display:block}
+.card-container .card-fashion{width:50%;float:left}
+.card-fashion:not(.card-background) 
+.card-title{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;width:85%}
+.card-fashion h4{margin-top:0}
+.card-fashion.card-background:after{border-radius:0}
+.card-fashion.card-background a{color:#fff!important}
+.card-fashion.card-background a:focus,.card-fashion.card-background a:hover{border-color:#fff!important}
+.card-fashion .stats-link,.card-fashion:not(.card-background) 
+.stats span{color:initial}
+.card-fashion .card-body{
+    position:absolute;bottom:0;left:0;right:0;padding:2rem 2rem 1.4rem;color:#fff;min-height:auto
+}
+.owl-carousel,
+.flickity {
+  overflow: hidden;
+}
+.owl-carousel {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: -o-grab;
+    cursor: -ms-grab;
+    cursor: grab;
+  }
+  
+.owl-carousel:hover .owl-next,
+#flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 1;
+  right: 10px;
+}
+
+.owl-carousel:hover .owl-prev,
+#flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 1;
+  left: 10px;
+}
+
+.testimonials.bg-parallax {
+  padding: 135px 0 115px;
+  background-attachment: scroll;
+}
+
+.testimonials.bg-parallax.overlay:before {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.testimonials.bg-parallax .testimonial-text,
+.testimonials.bg-parallax .testimonial span,
+.testimonials.bg-parallax .testimonial a {
+  color: #fff;
+}
+
+.testimonials.bg-parallax .owl-pagination {
+  margin-top: 40px;
+}

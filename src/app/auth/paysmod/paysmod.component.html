@@ -1,0 +1,105 @@
+<div class="wrapper ">
+    <app-header></app-header>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <app-nav></app-nav>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12 mt-4">
+            <div class="card ">
+              <div class="card-header ">
+                <span class="text-dark h4 text-uppercase">
+                    <i class="nc-icon nc-map-big"></i> Modifier pays
+                </span>
+                <a href="pays-new" class="btn btn-primary btn-round btn-sm float float-right m-1"> 
+                    <i class="nc-icon nc-simple-add"></i> Nouveau pays 
+                </a>
+                <a href="pays" class="btn btn-primary btn-round btn-sm float float-right m-1"> 
+                    <i class="nc-icon nc-bullet-list-67"></i> liste pays 
+                </a>
+              </div>
+              <div class="card-body ">
+                <div class="account-details-form">
+                    <form action="#">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <small class="card-title">image pour profile du pays</small> <br>
+                            <div class="fileinput fileinput-new text-center">
+                              <div class="fileinput-new thumbnail">
+                                <img src="assets/images/1245.jpg" class="col-12" alt="...">
+                              </div>
+                              <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                            <div>
+                                <span class="btn btn-rose btn-round btn-file">
+                                  <span class="fileinput-new"><i class="nc-icon nc-image"></i> Select image du pays</span>
+                                  <span class="fileinput-exists">Change</span>
+                                  <input type="file" name="..." />
+                                </span>
+                                <a href="javascript:;" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-8">
+                            <small class="card-title text-center">image pour couverture de profile du pays </small> <br>
+                            <div class="col-12">
+                              <img src="assets/images/promo_2_bg.jpg" alt="...">
+                            </div>
+                            <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                              <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                              <div>
+                                <span class="btn btn-rose btn-round btn-file">
+                                  <span class="fileinput-new"><i class="nc-icon nc-image"></i> Select image du pays</span>
+                                  <span class="fileinput-exists">Change</span>
+                                  <input type="file" name="..." />
+                                </span>
+                                <a href="javascript:;" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="input-group input-lg">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                      <i class="nc-icon nc-map-big"></i>
+                                    </span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="Nom pays">
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="input-group input-lg">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                      <i class="nc-icon nc-paper"></i>
+                                    </span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="Description de pays">
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="input-group input-lg">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                      <i class="nc-icon nc-mobile"></i>
+                                    </span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="Indicatifs pays">
+                              </div>
+                          </div>
+                        </div>
+                    </form>
+                </div>
+              </div>
+              <div class="card-footer text-center p-4">
+                <hr>
+                
+                <button class="btn btn-primary col-10 btn-round btn-sm m-1"> Enregistrer modification pays </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <app-footer></app-footer>
+    </div>
+  </div>

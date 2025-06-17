@@ -1,0 +1,195 @@
+<app-nav></app-nav>
+<div class="wrapper">
+    <div class="page-header clear-filter page-header-small" filter-color="green">
+        <div class="page-header-image" data-parallax="true" style="background-image:url('assets/images/32784.jpg');">
+        </div>
+        <div class="container">
+            <div class="photo-container">
+              <img src="assets/images/shop10.png" class="rounded-circle bg-white img-raised border border-success" width="100px" alt="">
+            </div>
+            <h3 class="title">{{currentuser?.prenom}} {{currentuser?.nom}}</h3>
+            <p class="category">{{currentuser?.fonction}}</p>
+          
+        </div>
+      </div>
+    <div class="main">
+        <div class="content">
+            <div class="card">
+                <div class="card-header">
+                  <ul class="nav nav-tabs justify-content-center" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#home" role="tab">
+                        <i class="now-ui-icons shopping_shop"></i> Tableau de Bords
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#Pannier" role="tab">
+                        <i class="now-ui-icons shopping_cart-simple"></i> Pannier
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#ModePayement" role="tab">
+                        <i class="now-ui-icons shopping_credit-card"></i> Mode de payement
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#Factures" role="tab">
+                        <i class="now-ui-icons education_paper"></i> Mes factures
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#Adresse" role="tab">
+                        <i class="now-ui-icons location_pin"></i> Adresse
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#Profile" role="tab">
+                        <i class="now-ui-icons users_single-02"></i> Détails profile
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="" role="tab">
+                        <i class="fa fa-sign-out"></i> Déconnexion
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <!-- Tab panes -->
+                  <div class="tab-content text-center">
+                    <div class="tab-pane active" id="home" role="tabpanel">
+                        <p class="text-dark"> Bonjour !!!</p>
+                    </div>
+                    <div class="tab-pane" id="Profile" role="tabpanel">
+                      <p class="text-dark"> I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. </p>
+                    </div>
+                    <div class="tab-pane" id="ModePayement" role="tabpanel">
+                        <h3 class="text-dark">Mode de Payment</h3>
+                        <p class="text-dark text-italic text-sm">
+                            <i class="now-ui-icons travel_info text-danger"></i> Vous ne pouvez pas savegarder votre mode de payment 
+                        </p>
+                    </div>
+                    <div class="tab-pane" id="Factures" role="tabpanel">
+                        <h3 class="title"><i class="now-ui-icons education_paper"></i> Mes factures</h3>
+                        <div class="myaccount-table table-responsive text-center">
+                            <table class="table table-bordered">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th class="text-center strong">N°</th>
+                                        <th class="text-center strong">DATE</th>
+                                        <th class="text-center strong">STATUS</th>
+                                        <th class="text-center strong">TOTAL</th>
+                                        <th class="text-center strong">ACTION</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>22/01/2025</td>
+                                        <td><span class="text-warning text-uppercase strong"> <i class="fa fa-refresh"></i> En cour ... </span></td>
+                                        <td> 3000 F. CFA</td>
+                                        <td><a href="pannier" class="link text-uppercase strong rounded-0"><i class="fa fa-eye"></i> Voir </a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>02/02/2025</td>
+                                        <td> <span class="text-success text-uppercase strong"> <i class="fa fa-check"></i> Validée </span></td>
+                                        <td> 200 F. CFA</td>
+                                        <td><a href="pannier" class="link text-uppercase strong rounded-0"><i class="fa fa-eye"></i> Voir </a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>June 12, 2019</td>
+                                        <td><span class="text-info text-uppercase strong"> <i class="fa fa-truck"></i> Livraison </span></td>
+                                        <td> 990 F. CFA</td>
+                                        <td><a href="pannier" class="link text-uppercase strong rounded-0"><i class="fa fa-eye"></i> Voir </a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="Adresse" role="tabpanel">
+                        <h3 class="text-dark"><i class="now-ui-icons location_pin"></i> Adresse</h3>
+                        <div class="account-details-form">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="input-group input-lg">
+                                            <div class="input-group-prepend">
+                                              <span class="input-group-text">
+                                                <i class="now-ui-icons location_pin"></i>
+                                              </span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Adresse complet">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="input-group input-lg">
+                                            <div class="input-group-prepend">
+                                              <span class="input-group-text">
+                                                <i class="now-ui-icons location_pin"></i>
+                                              </span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Seconde adresse">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="input-group input-lg">
+                                            <div class="input-group-prepend">
+                                              <span class="input-group-text">
+                                                <i class="fa fa-unlink"></i>
+                                              </span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Lien map (GPS)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="Pannier" role="tabpanel">
+                        <h3 class="title"><i class="now-ui-icons shopping_cart-simple"></i> Pannier</h3>
+                        <div class="myaccount-table table-responsive text-center">
+                            <table class="table table-bordered">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th class="text-center strong">N°</th>
+                                        <th class="text-center strong">DATE</th>
+                                        <th class="text-center strong">STATUS</th>
+                                        <th class="text-center strong">TOTAL</th>
+                                        <th class="text-center strong">ACTION</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>22/01/2025</td>
+                                        <td><span class="text-warning text-uppercase strong"> <i class="fa fa-refresh"></i> En cour ... </span></td>
+                                        <td> 3000 F. CFA</td>
+                                        <td><a href="pannier" class="link text-uppercase strong rounded-0"><i class="fa fa-eye"></i> Voir </a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>02/02/2025</td>
+                                        <td> <span class="text-success text-uppercase strong"> <i class="fa fa-check"></i> Validée </span></td>
+                                        <td> 200 F. CFA</td>
+                                        <td><a href="pannier" class="link text-uppercase strong rounded-0"><i class="fa fa-eye"></i> Voir </a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>June 12, 2019</td>
+                                        <td><span class="text-info text-uppercase strong"> <i class="fa fa-truck"></i> Livraison </span></td>
+                                        <td> 990 F. CFA</td>
+                                        <td><a href="pannier" class="link text-uppercase strong rounded-0"><i class="fa fa-eye"></i> Voir </a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+    <app-footer></app-footer>
+</div>
