@@ -8,10 +8,10 @@ export class ApiService {
 
   constructor(private httpClient: HttpClient) { }
   
-  public url_server = 'https://testapi.legipen.net';
+  public url_server = 'https://apis.metanovs.com';
 
-  url_api = "http://127.0.0.1:8000/api/v1/";
-  swagger = "https://testapi.legipen.net/api/documentation#/";
+  url_api = "https://apis.metanovs.com/api/v1/";
+  swagger = "https://apis.metanovs.com/api/documentation#/";
 
   // Get Image
   public postFileUpload(data: any) {
