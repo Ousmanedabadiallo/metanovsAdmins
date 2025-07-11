@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./clientsnew.component.scss']
 })
 export class ClientsnewComponent {
+  afficherMessage: boolean = false;
+
+  changerAffichage() {
+    this.afficherMessage = !this.afficherMessage;
+  }
 
 }

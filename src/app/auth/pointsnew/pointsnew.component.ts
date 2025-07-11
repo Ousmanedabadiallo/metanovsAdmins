@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./pointsnew.component.scss']
 })
 export class PointsnewComponent {
+  afficherMessage: boolean = false;
+
+  changerAffichage() {
+    this.afficherMessage = !this.afficherMessage;
+  }
 
 }

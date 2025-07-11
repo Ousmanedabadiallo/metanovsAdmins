@@ -8,7 +8,8 @@
           <span class="navbar-toggler-bar bar3"></span>
         </button>
       </div>
-      <a class="navbar-brand" href="javascript:;">Admin | MB • METATNOVA</a>
+      <a class="navbar-brand" href="javascript:;">
+        <img class="logo-dark" src="assets/images/v_logos.png" style="height:35px;" alt="logo"></a>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -30,20 +31,23 @@
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown">
             <span href=""  class="btn btn-neutral btn-icon btn-twitter btn-round btn-sm" 
-            style="background-image:url('assets/images/32784.jpg'); background-size: 100% 100%;" title="Follow us">
+            style="background-image:url('assets/images/default-avatar.png'); background-size: 100% 100%;" title="Follow us">
               
             </span>
-            <p> &nbsp; {{currentuser?.prenom}} {{currentuser?.nom}}</p>
+            <p> &nbsp; Bintou DIONE</p>
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink1">
-            <a class="dropdown-item" href="profile">
+            <a class="dropdown-item text-uppercase" href="profile">
               <i class="now-ui-icons users_single-02"></i> Profile
             </a>
-            <a class="dropdown-item" href="profile">
-              <i class="now-ui-icons shopping_cart-simple"></i> Pannier
+            <a class="dropdown-item text-uppercase" href="notification">
+              <i class="nc-icon nc-bell-55"></i> Notification
             </a>
-            <a class="dropdown-item" target="_blank" href="">
-              <i class="fa fa-sign-out" onclick="logout()"></i> Déconnexion
+            <a class="dropdown-item text-uppercase" href="password">
+              <i class="nc-icon nc-lock-circle-open"></i> modifier mot de passe
+            </a>
+            <a class="dropdown-item text-uppercase" target="_blank" href="">
+              <i class="nc-icon nc-minimal-right"></i> Déconnexion
             </a>
           </div>
         </li>

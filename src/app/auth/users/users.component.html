@@ -1,0 +1,84 @@
+<div class="wrapper ">
+    <app-header></app-header>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <app-nav></app-nav>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12 mt-4">
+            <div class="card">
+              <div class="card-header ">
+                <span class="text-dark font-weight-bold h4 text-uppercase">
+                  <i class="nc-icon nc-bullet-list-67"></i> Liste admins
+                </span>
+                <a href="users-new" class="btn btn-primary btn-round btn-sm float float-right m-1"> 
+                  <i class="nc-icon nc-simple-add"></i> Nouveau admin 
+                </a>
+              </div>
+              <div class="card-body ">
+                <div class="account-details-form">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead class=" text-primary">
+                        <th class="col-3">
+                            <i class="nc-icon nc-single-02"></i> admins
+                        </th>
+                        <th>
+                            <i class="nc-icon nc-mobile"></i> Téléphone <small> email </small>
+                        </th>
+                        <th>
+                            <i class="now-ui-icons location_pin"></i> Adresse
+                        </th>
+                        <th class="text-right">
+                          Actions
+                        </th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="fileinput-new thumbnail">
+                                  <img src="assets/images/black.jpg" alt="">
+                                </div>
+                              </div>
+                              <div class="col-7">
+                                Nom_admin
+                                <br />
+                                <span class="text-muted"><small> <i class="nc-icon nc-check-2"></i> Active</small></span>
+                              </div>
+                              <div class="col-md-3 col-3 text-right">
+                                
+                              </div>
+                            </div>                           
+                          </td>
+                          <td>
+                             +221 000 00 00 00 <br>
+                             bonjour@metanova.com
+                          </td>
+                          <td>
+                            Sénégal, Dakar, Kheurmassa, <br> Rue : 1255, Porte : 258
+                          </td>
+                          <td class="text-right">
+                            <a href="users-modifier" class="btn btn-success btn-outline-success  btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>
+                            <a href="users-voir" class="btn btn-primary btn-outline-primary  btn-round btn-sm m-1"> <i class="nc-icon nc-single-copy-04"></i> Voir </a>
+                            <button class="btn btn-danger btn-outline-danger btn-round btn-sm m-1"> <i class="nc-icon nc-simple-remove"></i> Suprimer </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer ">
+                <hr>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <app-footer></app-footer>
+    </div>
+  </div>

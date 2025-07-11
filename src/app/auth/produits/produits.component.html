@@ -36,7 +36,7 @@
                           Actions
                         </th>
                       </thead>
-                      <tbody *ngFor="let produit of produits">
+                      <tbody>
                         <tr>
                           <td>
                             <div class="row">
@@ -46,7 +46,7 @@
                                 </div>
                               </div>
                               <div class="col-7">
-                                {{produit.nom}} 
+                                Nom_Produit 
                                 <br />
                                 <span class="text-muted"><small> <i class="nc-icon nc-check-2"></i> Active</small></span>
                               </div>
@@ -56,10 +56,10 @@
                             </div>                            
                           </td>
                           <td>
-                            {{produit.nom}}
+                            Nom_categorie
                           </td>
                           <td>
-                            {{produit?.boutique.nom}}
+                            Nom_Boutique
                           </td>
                           <td class="text-right">
                             <a href="produits-modifier" class="btn btn-success btn-outline-success  btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>

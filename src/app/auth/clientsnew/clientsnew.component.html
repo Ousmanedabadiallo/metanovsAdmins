@@ -9,8 +9,8 @@
           <div class="col-md-12 mt-4">
             <div class="card ">
               <div class="card-header ">
-                <span class="text-dark h4 text-uppercase">
-                  <i class="nc-icon nc-badge"></i> Nouveau client
+                <span class="text-dark h4 font-weight-bold text-uppercase">
+                  <i class="nc-icon nc-simple-add"></i> Nouveau client
                 </span>
                 <a href="clients" class="btn btn-primary btn-round btn-sm float float-right m-1"> <i class="nc-icon nc-bullet-list-67"></i> liste clients </a>
               </div>
@@ -204,7 +204,10 @@
                                     <input type="text" class="form-control" placeholder="Lien map (GPS)">
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <button class="col-12 btn btn-dark p-2 bg-light text-center text-dark" (click)="changerAffichage()">
+                              Créer un mot de passe 
+                            </button>
+                            <div class="col-lg-6" *ngIf="afficherMessage">
                                 <div class="input-group input-lg">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">
@@ -214,7 +217,7 @@
                                     <input type="text" class="form-control" placeholder="Mot de passe">
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6" *ngIf="afficherMessage">
                                 <div class="input-group input-lg">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">

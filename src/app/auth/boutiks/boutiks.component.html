@@ -9,8 +9,8 @@
           <div class="col-md-12 mt-4">
             <div class="card">
               <div class="card-header ">
-                <span class="text-dark h4 text-uppercase">
-                  <i class="nc-icon nc-shop"></i> Liste boutiques
+                <span class="text-dark h4 text-uppercase font-weight-bold">
+                  <i class="nc-icon nc-bullet-list-67"></i> Liste boutiques
                 </span>
                 <a href="boutiques-new" class="btn btn-primary btn-round btn-sm float float-right m-1"> 
                   <i class="nc-icon nc-simple-add"></i> Nouveau boutique 
@@ -36,7 +36,7 @@
                           Actions
                         </th>
                       </thead>
-                      <tbody *ngFor="let boutique of boutiques">
+                      <tbody>
                         <tr>
                           <td>
                             <div class="row">
@@ -46,7 +46,7 @@
                                 </div>
                               </div>
                               <div class="col-md-7 col-7">
-                                {{boutique.nom}} 
+                                Boutique 
                                 <br />
                                 <span class="text-muted"><small> <i class="nc-icon nc-check-2"></i> Active</small></span>
                               </div>
@@ -56,11 +56,11 @@
                             </div>                            
                           </td>
                           <td>
-                            <i class="nc-icon nc-mobile"></i> {{boutique.telephone}} 
+                            <i class="nc-icon nc-mobile"></i> +221 000 00 00 00 
                           </td>
                           <td>
                             <i class="now-ui-icons location_pin"></i> 
-                            {{boutique.pays}} , {{boutique.region}} , {{boutique.ville}} , <br> Rue : {{boutique.rue}} , Porte : {{boutique.porte}} 
+                            Sénégal, Dakar, Kheurmassa, <br> Rue : 1255, Porte : 258
                           </td>
                           <td class="text-right">
                             <a href="boutiques-modifier" class="btn btn-success btn-outline-success  btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>

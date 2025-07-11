@@ -37,46 +37,82 @@ import { PaysComponent } from './pays/pays.component';
 import { PaysvoirComponent } from './paysvoir/paysvoir.component';
 import { PaysmodComponent } from './paysmod/paysmod.component';
 import { PaysnewComponent } from './paysnew/paysnew.component';
+import { LivreurComponent } from './livreur/livreur.component';
+import { LivreursnewComponent } from './livreursnew/livreursnew.component';
+import { LivreursvoirComponent } from './livreursvoir/livreursvoir.component';
+import { LivreurmodComponent } from './livreurmod/livreurmod.component';
+import { LivraisonsComponent } from './livraisons/livraisons.component';
+import { LivraisonsmodComponent } from './livraisonsmod/livraisonsmod.component';
+import { LivraisonsvoirComponent } from './livraisonsvoir/livraisonsvoir.component';
+import { LivraisonsnewComponent } from './livraisonsnew/livraisonsnew.component';
+import { CommandesnewComponent } from './commandesnew/commandesnew.component';
+import { CommandesComponent } from './commandes/commandes.component';
+import { CommandesmodComponent } from './commandesmod/commandesmod.component';
+import { CommandesvoirComponent } from './commandesvoir/commandesvoir.component';
+import { UsersnewComponent } from './usersnew/usersnew.component';
+import { UsersvoirComponent } from './usersvoir/usersvoir.component';
+import { UsersmodComponent } from './usersmod/usersmod.component';
+import { UsersComponent } from './users/users.component';
+import { PasswordComponent } from './password/password.component';
+import { LivraisonsgestsComponent } from './livraisonsgests/livraisonsgests.component';
 
 const routes: Routes = [
     { path: '', pathMatch: 'full', redirectTo: 'accueil'},
-    { path: 'accueil', component: AcceuilComponent, data: { title: 'Tableau de bord | Admin - MB • METATNOVA' }},
-    { path: 'profile', component: ProfileComponent, data: { title: 'Profile | Admin - MB • METATNOVA' }},
-    { path: 'pannier', component: CardComponent, data: { title: 'Pannier | Admin - MB • METATNOVA' }},
-    { path: 'mode-payement', component: ChekoutComponent, data: { title: 'Mode de payement | Admin - MB • METATNOVA' }},
-    { path: 'categories', component: CategoriesComponent, data: { title: 'Détail catégaries | Admin - MB • METATNOVA' }},
-    { path: 'categories-listes', component: CategorieslistesComponent, data: { title: 'Listes des catégaries | Admin - MB • METATNOVA' }},
-    { path: 'boutiques', component: BoutiksComponent, data: { title: 'Liste des boutiques | Admin - MB • METATNOVA' }},
-    { path: 'boutiques-new', component: BoutiksNewComponent, data: { title: 'Nouveau boutique | Admin - MB • METATNOVA' }},
-    { path: 'boutiques-modifier', component: BoutiksmodComponent, data: { title: 'Modifier boutique | Admin - MB • METATNOVA' }},
-    { path: 'boutiques-voir', component: BoutiksvoirComponent, data: { title: 'Voir boutique | Admin - MB • METATNOVA' }},
-    { path: 'produits', component: ProduitsComponent, data: { title: 'Liste des produits | Admin - MB • METATNOVA' }},
-    { path: 'produits-new', component: ProduitsnewComponent, data: { title: 'Nouveau produit | Admin - MB • METATNOVA' }},
-    { path: 'produits-modifier', component: ProduitsmodComponent, data: { title: 'Modifier produit | Admin - MB • METATNOVA' }},
-    { path: 'produits-voir', component: ProduitsvoirComponent, data: { title: 'Voir produit | Admin - MB • METATNOVA' }},
-    { path: 'categories-new', component: CategoriesnewComponent, data: { title: 'Nouveau catégories | Admin - MB • METATNOVA' }},
-    { path: 'categories-modifier', component: CategoriesmodComponent, data: { title: 'Modifier catégories | Admin - MB • METATNOVA' }},
-    { path: 'categories-voir', component: CategoriesvoirComponent, data: { title: 'Voir catégories | Admin - MB • METATNOVA' }},
-    { path: 'clients', component: ClientsComponent, data: { title: 'Liste des clients | Admin - MB • METATNOVA' }},
-    { path: 'clients-new', component: ClientsnewComponent, data: { title: 'Nouveau client | Admin - MB • METATNOVA' }},
-    { path: 'clients-modifier', component: ClientsmodComponent, data: { title: 'Modifier client | Admin - MB • METATNOVA' }},
-    { path: 'clients-voir', component: ClientsvoirComponent, data: { title: 'Voir client | Admin - MB • METATNOVA' }},
-    { path: 'marques', component: MarquesComponent, data: { title: 'Liste des marques | Admin - MB • METATNOVA' }},
-    { path: 'marques-new', component: MarquesnewComponent, data: { title: 'Nouveau marque | Admin - MB • METATNOVA' }},
-    { path: 'marques-modifier', component: MarquesmodComponent, data: { title: 'Modifier marque | Admin - MB • METATNOVA' }},
-    { path: 'marques-voir', component: MarquesvoirComponent, data: { title: 'Voir marque | Admin - MB • METATNOVA' }},
-    { path: 'points', component: PointsComponent, data: { title: 'Liste des points | Admin - MB • METATNOVA' }},
-    { path: 'points-new', component: PointsnewComponent, data: { title: 'Nouveau Sites | Admin - MB • METATNOVA' }},
-    { path: 'points-modifier', component: PointsmodComponent, data: { title: 'Modifier Sites | Admin - MB • METATNOVA' }},
-    { path: 'points-voir', component: PointsvoirComponent, data: { title: 'Voir Sites | Admin - MB • METATNOVA' }},
-    { path: 'villes', component: VillesComponent, data: { title: 'Liste des villes | Admin - MB • METATNOVA' }},
-    { path: 'villes-new', component: VillesnewComponent, data: { title: 'Nouveau ville | Admin - MB • METATNOVA' }},
-    { path: 'villes-modifier', component: VillesmodComponent, data: { title: 'Modifier ville | Admin - MB • METATNOVA' }},
-    { path: 'villes-voir', component: VillesvoirComponent, data: { title: 'Voir ville | Admin - MB • METATNOVA' }},
-    { path: 'pays', component: PaysComponent, data: { title: 'Liste des pays | Admin - MB • METATNOVA' }},
-    { path: 'pays-new', component: PaysnewComponent, data: { title: 'Nouveau pay | Admin - MB • METATNOVA' }},
-    { path: 'pays-modifier', component: PaysmodComponent, data: { title: 'Modifier pay | Admin - MB • METATNOVA' }},
-    { path: 'pays-voir', component: PaysvoirComponent, data: { title: 'Voir pay | Admin - MB • METATNOVA' }},
+    { path: 'accueil', component: AcceuilComponent, data: { title: 'Tableau de bord | Admin • METATNOV' }},
+    { path: 'profile', component: ProfileComponent, data: { title: 'Profile | Admin • METATNOV' }},
+    { path: 'password', component: PasswordComponent, data: { title: 'Modifier mot de passe | Admin • METATNOV' }},
+    { path: 'pannier', component: CardComponent, data: { title: 'Pannier | Admin • METATNOV' }},
+    { path: 'mode-payement', component: ChekoutComponent, data: { title: 'Mode de payement | Admin • METATNOV' }},
+    { path: 'categories', component: CategoriesComponent, data: { title: 'Détail catégaries | Admin • METATNOV' }},
+    { path: 'categories-listes', component: CategorieslistesComponent, data: { title: 'Listes des catégaries | Admin • METATNOV' }},
+    { path: 'boutiques', component: BoutiksComponent, data: { title: 'Liste des boutiques | Admin • METATNOV' }},
+    { path: 'boutiques-new', component: BoutiksNewComponent, data: { title: 'Nouveau boutique | Admin • METATNOV' }},
+    { path: 'boutiques-modifier', component: BoutiksmodComponent, data: { title: 'Modifier boutique | Admin • METATNOV' }},
+    { path: 'boutiques-voir', component: BoutiksvoirComponent, data: { title: 'Voir boutique | Admin • METATNOV' }},
+    { path: 'produits', component: ProduitsComponent, data: { title: 'Liste des produits | Admin • METATNOV' }},
+    { path: 'produits-new', component: ProduitsnewComponent, data: { title: 'Nouveau produit | Admin • METATNOV' }},
+    { path: 'produits-modifier', component: ProduitsmodComponent, data: { title: 'Modifier produit | Admin • METATNOV' }},
+    { path: 'produits-voir', component: ProduitsvoirComponent, data: { title: 'Voir produit | Admin • METATNOV' }},
+    { path: 'categories-new', component: CategoriesnewComponent, data: { title: 'Nouveau catégories | Admin • METATNOV' }},
+    { path: 'categories-modifier', component: CategoriesmodComponent, data: { title: 'Modifier catégories | Admin • METATNOV' }},
+    { path: 'categories-voir', component: CategoriesvoirComponent, data: { title: 'Voir catégories | Admin • METATNOV' }},
+    { path: 'clients', component: ClientsComponent, data: { title: 'Liste des clients | Admin • METATNOV' }},
+    { path: 'clients-new', component: ClientsnewComponent, data: { title: 'Nouveau client | Admin • METATNOV' }},
+    { path: 'clients-modifier', component: ClientsmodComponent, data: { title: 'Modifier client | Admin • METATNOV' }},
+    { path: 'clients-voir', component: ClientsvoirComponent, data: { title: 'Voir client | Admin • METATNOV' }},
+    { path: 'marques', component: MarquesComponent, data: { title: 'Liste des marques | Admin • METATNOV' }},
+    { path: 'marques-new', component: MarquesnewComponent, data: { title: 'Nouveau marque | Admin • METATNOV' }},
+    { path: 'marques-modifier', component: MarquesmodComponent, data: { title: 'Modifier marque | Admin • METATNOV' }},
+    { path: 'marques-voir', component: MarquesvoirComponent, data: { title: 'Voir marque | Admin • METATNOV' }},
+    { path: 'points', component: PointsComponent, data: { title: 'Liste des points | Admin • METATNOV' }},
+    { path: 'points-new', component: PointsnewComponent, data: { title: 'Nouveau Sites | Admin • METATNOV' }},
+    { path: 'points-modifier', component: PointsmodComponent, data: { title: 'Modifier Sites | Admin • METATNOV' }},
+    { path: 'points-voir', component: PointsvoirComponent, data: { title: 'Voir Sites | Admin • METATNOV' }},
+    { path: 'villes', component: VillesComponent, data: { title: 'Liste des villes | Admin • METATNOV' }},
+    { path: 'villes-new', component: VillesnewComponent, data: { title: 'Nouveau ville | Admin • METATNOV' }},
+    { path: 'villes-modifier', component: VillesmodComponent, data: { title: 'Modifier ville | Admin • METATNOV' }},
+    { path: 'villes-voir', component: VillesvoirComponent, data: { title: 'Voir ville | Admin • METATNOV' }},
+    { path: 'pays', component: PaysComponent, data: { title: 'Liste des pays | Admin • METATNOV' }},
+    { path: 'pays-new', component: PaysnewComponent, data: { title: 'Nouveau pays | Admin • METATNOV' }},
+    { path: 'pays-modifier', component: PaysmodComponent, data: { title: 'Modifier pays | Admin • METATNOV' }},
+    { path: 'pays-voir', component: PaysvoirComponent, data: { title: 'Voir pays | Admin • METATNOV' }},
+    { path: 'livreurs', component: LivreurComponent, data: { title: 'Liste des livreurs | Admin • METATNOV' }},
+    { path: 'livreurs-new', component: LivreursnewComponent, data: { title: 'Nouveau livreur | Admin • METATNOV' }},
+    { path: 'livreurs-modifier', component: LivreurmodComponent, data: { title: 'Modifier livreur | Admin • METATNOV' }},
+    { path: 'livreurs-voir', component: LivreursvoirComponent, data: { title: 'Voir livreur | Admin • METATNOV' }},
+    { path: 'livraisons', component: LivraisonsComponent, data: { title: 'Liste des livraisons | Admin • METATNOV' }},
+    { path: 'livraisons-gest', component: LivraisonsgestsComponent, data: { title: 'Gestions des livraisons | Admin • METATNOV' }},
+    { path: 'livraisons-new', component: LivraisonsnewComponent, data: { title: 'Nouveau livraison | Admin • METATNOV' }},
+    { path: 'livraisons-modifier', component: LivraisonsmodComponent, data: { title: 'Modifier livraison | Admin • METATNOV' }},
+    { path: 'livraisons-voir', component: LivraisonsvoirComponent, data: { title: 'Voir livraison | Admin • METATNOV' }},
+    { path: 'commandes', component: CommandesComponent, data: { title: 'Liste des Commandes | Admin • METATNOV' }},
+    { path: 'commandes-new', component: CommandesnewComponent, data: { title: 'Nouveau Commande | Admin • METATNOV' }},
+    { path: 'commandes-modifier', component: CommandesmodComponent, data: { title: 'Modifier Commande | Admin • METATNOV' }},
+    { path: 'commandes-voir', component: CommandesvoirComponent, data: { title: 'Voir Commande | Admin • METATNOV' }},
+    { path: 'users', component: UsersComponent, data: { title: 'Liste des users | Admin • METATNOV' }},
+    { path: 'users-new', component: UsersnewComponent, data: { title: 'Nouveau user | Admin • METATNOV' }},
+    { path: 'users-modifier', component: UsersmodComponent, data: { title: 'Modifier user | Admin • METATNOV' }},
+    { path: 'users-voir', component: UsersvoirComponent, data: { title: 'Voir user | Admin • METATNOV' }},
         
   ];
 

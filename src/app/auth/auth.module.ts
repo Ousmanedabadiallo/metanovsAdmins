@@ -43,6 +43,25 @@ import { PaysComponent } from './pays/pays.component';
 import { PaysnewComponent } from './paysnew/paysnew.component';
 import { PaysmodComponent } from './paysmod/paysmod.component';
 import { PaysvoirComponent } from './paysvoir/paysvoir.component';
+import { LivreurComponent } from './livreur/livreur.component';
+import { LivreursnewComponent } from './livreursnew/livreursnew.component';
+import { LivreursvoirComponent } from './livreursvoir/livreursvoir.component';
+import { LivraisonsComponent } from './livraisons/livraisons.component';
+import { LivraisonsnewComponent } from './livraisonsnew/livraisonsnew.component';
+import { LivreurmodComponent } from './livreurmod/livreurmod.component';
+import { LivraisonsmodComponent } from './livraisonsmod/livraisonsmod.component';
+import { LivraisonsvoirComponent } from './livraisonsvoir/livraisonsvoir.component';
+import { CommandesComponent } from './commandes/commandes.component';
+import { CommandesnewComponent } from './commandesnew/commandesnew.component';
+import { CommandesmodComponent } from './commandesmod/commandesmod.component';
+import { CommandesvoirComponent } from './commandesvoir/commandesvoir.component';
+import { UsersComponent } from './users/users.component';
+import { UsersnewComponent } from './usersnew/usersnew.component';
+import { UsersmodComponent } from './usersmod/usersmod.component';
+import { UsersvoirComponent } from './usersvoir/usersvoir.component';
+import { PasswordComponent } from './password/password.component';
+import { MobilesComponent } from './produitsnew/mobiles/mobiles.component';
+import { LivraisonsgestsComponent } from './livraisonsgests/livraisonsgests.component';
 
 @NgModule({
     declarations: [
@@ -85,7 +104,26 @@ import { PaysvoirComponent } from './paysvoir/paysvoir.component';
       PaysComponent,
       PaysnewComponent,
       PaysmodComponent,
-      PaysvoirComponent
+      PaysvoirComponent,
+      LivreurComponent,
+      LivreursnewComponent,
+      LivreursvoirComponent,
+      LivraisonsComponent,
+      LivraisonsnewComponent,
+      LivreurmodComponent,
+      LivraisonsmodComponent,
+      LivraisonsvoirComponent,
+      CommandesComponent,
+      CommandesnewComponent,
+      CommandesmodComponent,
+      CommandesvoirComponent,
+      UsersComponent,
+      UsersnewComponent,
+      UsersmodComponent,
+      UsersvoirComponent,
+      PasswordComponent,
+      MobilesComponent,
+      LivraisonsgestsComponent
     ],
     imports: [
       CommonModule,
