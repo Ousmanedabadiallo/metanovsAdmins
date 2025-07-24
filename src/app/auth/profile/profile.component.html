@@ -5,389 +5,592 @@
     <app-nav></app-nav>
     <div class="wrapper">
       <div class="page-header clear-filter page-header-small">
-          <div class="page-header-image" data-parallax="true">
-          </div>
-          <div class="container"
-          style="background-image: url('assets/images/2240163455.jpg'); background-size: 100% 100%; background-position: top center;" loading="lazy">
-              <div class="photo-container">
-                <img src="assets/images/shop10.png" class="rounded-circle bg-white img-raised border border-success" width="100px" alt="">
-              </div>
-              <h3 class="title">Bintou DIONE</h3>
-              <p class="category">E-commerce</p>
-          </div>
+        <div class="page-header-image" data-parallax="true">
         </div>
+        <div class="container"
+          style="background-image: url('assets/images/2240163455.jpg'); background-size: 100% 100%; background-position: top center;"
+          loading="lazy">
+          <div class="photo-container">
+            <img src="assets/images/shop10.png" class="rounded-circle bg-white img-raised border border-success"
+              width="100px" alt="">
+          </div>
+          <h3 class="title">{{currentUser.nom}} {{currentUser.nom}}</h3>
+          <p class="category">E-commerce</p>
+        </div>
+      </div>
       <div class="main">
-          <div class="content">
-              <div class="card">
-                  <div class="card-header">
-                    <ul class="nav nav-tabs justify-content-center" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#home" role="tab">
-                          <i class="now-ui-icons shopping_shop"></i> Tableau de Bords
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#Pannier" role="tab">
-                          <i class="now-ui-icons shopping_cart-simple"></i> Pannier
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#ModePayement" role="tab">
-                          <i class="now-ui-icons shopping_credit-card"></i> Mode de payement
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#Factures" role="tab">
-                          <i class="now-ui-icons education_paper"></i> Mes factures
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#Adresse" role="tab">
-                          <i class="now-ui-icons location_pin"></i> Adresse
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#Profile" role="tab">
-                          <i class="now-ui-icons users_single-02"></i> Détails profile
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#modifier" role="tab">
-                          <i class="nc-icon nc-badge"></i> modifier
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                    <!-- Tab panes -->
-                    <div class="tab-content text-center">
-                      <div class="tab-pane active" id="home" role="tabpanel">
-                          <p class="text-dark"> Bonjour !!!</p>
-                      </div>
-                      <div class="tab-pane" id="modifier" role="tabpanel">
-                        <div class="wrapper">
-                          <div class="main">
-                            <div class="section">
-                              <div class="container">
-                                <div class="row col-md-offset-4 justify-content-center">
-                                  <div class="col-md-3 row">
-                                    <div class="col-12">
-                                      <img src="assets/images/shop10.png" class="rounded-circle bg-white img-raised border border-success" width="100px" alt="">
+        <div class="content">
+          <div class="card">
+            <div class="card-header">
+              <ul class="nav nav-tabs justify-content-center" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#home" role="tab">
+                    <i class="now-ui-icons shopping_shop"></i> Tableau de Bords
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#Pannier" role="tab">
+                    <i class="now-ui-icons shopping_cart-simple"></i> Pannier
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#ModePayement" role="tab">
+                    <i class="now-ui-icons shopping_credit-card"></i> Mode de payement
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#Factures" role="tab">
+                    <i class="now-ui-icons education_paper"></i> Mes factures
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#Adresse" role="tab">
+                    <i class="now-ui-icons location_pin"></i> Adresse
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#Profile" role="tab">
+                    <i class="now-ui-icons users_single-02"></i> Détails profile
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#modifier" role="tab">
+                    <i class="nc-icon nc-badge"></i> modifier
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <!-- Tab panes -->
+              <div class="tab-content text-center">
+                <div class="tab-pane active" id="home" role="tabpanel">
+                  <p class="text-dark"> Bonjour !!!</p>
+                </div>
+                <div class="tab-pane" id="modifier" role="tabpanel">
+                  <div class="wrapper">
+                    <div class="main">
+                      <div class="section">
+                        <div class="container">
+                          <div class="row col-md-offset-4 justify-content-center">
+                            <div class="col-md-3 row">
+                              <div class="col-12">
+                                <img src="assets/images/shop10.png"
+                                  class="rounded-circle bg-white img-raised border border-success" width="100px" alt="">
+                              </div>
+                              <div class="col-12 text-center font-weight-bold h6 text-uppercase">
+                                {{currentUser.prenom}} {{currentUser.nom}}
+                                <div class="text-center small text-uppercase">
+                                  E-commerce
+
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row col-md-7">
+                              <h3 class="text-dark text-uppercase font-weight-bold"><i class="nc-icon nc-badge"></i>
+                                Modifier Profile</h3>
+                              <div class="account-details-form">
+                                <form class="form" [formGroup]="userForm" (ngSubmit)="enregistrer()">
+                                  <div class="row">
+                                    <div class="col-lg-4">
+                                      <small class="card-title">image pour profile</small> <br>
+                                      <div class="fileinput fileinput-new text-center">
+                                        <div class="fileinput-new thumbnail">
+                                          <img src="assets/images/default-avatar.png" alt="...">
+                                        </div>
+                                        <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                        <div>
+                                          <span class="btn btn-rose btn-round btn-file">
+                                            <span class="fileinput-new"><i class="nc-icon nc-image"></i> Select
+                                              image</span>
+                                            <span class="fileinput-exists">Change</span>
+                                            <input type="file" name="..." />
+                                          </span>
+                                          <a href="javascript:;" class="btn btn-danger btn-round fileinput-exists"
+                                            data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                                        </div>
+                                      </div>
                                     </div>
-                                    <div class="col-12 text-center font-weight-bold h6 text-uppercase">
-                                      Bintou DIONE
-                                      <div class="text-center small text-uppercase">
-                                        E-commerce
-  
+                                    <div class="col-lg-8">
+                                      <small class="card-title">image pour couverture de profile</small> <br>
+                                      <div class="col-12">
+                                        <img src="assets/images/promo_2_bg.jpg" alt="...">
+                                      </div>
+                                      <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                        <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                        <div>
+                                          <span class="btn btn-rose btn-round btn-file">
+                                            <span class="fileinput-new"><i class="nc-icon nc-image"></i> Select
+                                              image</span>
+                                            <span class="fileinput-exists">Change</span>
+                                            <input type="file" name="..." />
+                                          </span>
+                                          <a href="javascript:;" class="btn btn-danger btn-round fileinput-exists"
+                                            data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="input-group input-lg">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="nc-icon nc-single-02"></i>
+                                          </span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Prénom"
+                                          formControlName="prenom">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="input-group input-lg">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="nc-icon nc-single-02"></i>
+                                          </span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Nom" formControlName="nom">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="input-group input-lg">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="nc-icon nc-mobile"></i>
+                                          </span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Numero de téléphone"
+                                          formControlName="telephone">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="input-group input-lg">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="nc-icon nc-email-85"></i>
+                                          </span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="adresse email"
+                                          formControlName="email">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="input-group input-sm">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="nc-icon nc-mobile"></i>
+                                          </span>
+                                        </div>
+                                        <select class="form-control" id="exampleFormControlSelect1"
+                                          formControlName="email">
+                                          <option value="Homme">Homme</option>
+                                          <option value="Femme">Femme</option>
+                                          <option value="Ignore">Ignore</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="input-group input-lg">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="nc-icon nc-calendar-60"></i>
+                                          </span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Date d'anniversaire"
+                                          formControlName="date_naissance">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="input-group input-lg">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="now-ui-icons location_pin"></i>
+                                          </span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Adresse complet"
+                                          formControlName="adresse">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="input-group input-lg">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="now-ui-icons location_pin"></i>
+                                          </span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Seconde adresse"
+                                          formControlName="second_adresse">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="input-group input-lg">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="nc-icon nc-pin-3"></i>
+                                          </span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Pays"
+                                          formControlName="pays">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="input-group input-lg">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="nc-icon nc-map-big"></i>
+                                          </span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Ville"
+                                          formControlName="ville">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="input-group input-lg">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="nc-icon nc-map-big"></i>
+                                          </span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Quartier"
+                                          formControlName="quartier">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="input-group input-lg">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="nc-icon nc-map-big"></i>
+                                          </span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Rue" formControlName="rue">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="input-group input-lg">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="nc-icon nc-map-big"></i>
+                                          </span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Porte"
+                                          formControlName="porte">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="input-group input-lg">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="now-ui-icons location_pin"></i>
+                                          </span>
+                                        </div>
+                                        <select name="name1" id="name1" formControlName="typeuser_id">
+                                          <option *ngFor="let typeuser of typeusers" value="{{typeuser.id}}">
+                                            {{typeuser.designation}}
+                                          </option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="input-group input-lg">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="now-ui-icons location_pin"></i>
+                                          </span>
+                                        </div>
+                                        <select name="name2" id="name2" formControlName="boutique_id">
+                                          <option *ngFor="let boutique of boutiques" value="{{boutique.id}}">
+                                            {{boutique.nom}} {{boutique.adresse}}
+                                          </option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="input-group input-lg">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="nc-icon nc-lock-circle-open"></i>
+                                          </span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Encien Mot de passe"
+                                          formControlName="password">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="input-group input-lg">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="nc-icon nc-lock-circle-open"></i>
+                                          </span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Confirme le Mot de passe"
+                                          formControlName="password">
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="row col-md-7">
-                                    <h3 class="text-dark text-uppercase font-weight-bold"><i class="nc-icon nc-badge"></i> Modifier Profile</h3>
-                                    <div class="account-details-form">
-                                        <form action="#">
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <div class="input-group input-sm">
-                                                        <div class="input-group-prepend">
-                                                          <span class="input-group-text">
-                                                            <i class="now-ui-icons users_single-02"></i>
-                                                          </span>
-                                                        </div>
-                                                        <input type="text" class="form-control" placeholder="Nom">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="input-group input-sm">
-                                                        <div class="input-group-prepend">
-                                                          <span class="input-group-text">
-                                                            <i class="now-ui-icons users_single-02"></i>
-                                                          </span>
-                                                        </div>
-                                                        <input type="text" class="form-control" placeholder="Prénom">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                  <div class="input-group input-sm">
-                                                    <div class="input-group-prepend">
-                                                      <span class="input-group-text">
-                                                        <i class="nc-icon nc-mobile"></i>
-                                                      </span>
-                                                    </div>
-                                                    <select class="form-control" id="exampleFormControlSelect1">
-                                                      <option>Homme</option>
-                                                      <option>Femme</option>
-                                                      <option>Ignore</option>
-                                                    </select>
-                                                  </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="input-group input-sm">
-                                                        <div class="input-group-prepend">
-                                                          <span class="input-group-text">
-                                                            <i class="nc-icon nc-mobile"></i>
-                                                          </span>
-                                                        </div>
-                                                        <input type="text" class="form-control" placeholder="Numero téléphone">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="input-group input-sm">
-                                                        <div class="input-group-prepend">
-                                                          <span class="input-group-text">
-                                                            <i class="nc-icon nc-email-85"></i>
-                                                          </span>
-                                                        </div>
-                                                        <input type="text" class="form-control" placeholder="email">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    
+                                  <div class="card-footer text-center p-4">
+                                    <hr>
+                                    <button class="btn btn-primary col-10 btn-round btn-sm m-1" type="submit">
+                                      Enregistrer admin
+                                    </button>
                                   </div>
-                                </div>
+                                </form>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="tab-pane" id="Profile" role="tabpanel">
-                        <div class="row justify-content-center">
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="nc-icon nc-single-02"></i> Nom</span>
-                            </div>
-                            <div class="col-6">
-                              Nom_Admin
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="nc-icon nc-single-02"></i> Prénom </span>
-                            </div>
-                            <div class="col-6">
-                              Prenom_Admin
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="nc-icon nc-single-02"></i> Genre </span>
-                            </div>
-                            <div class="col-6">
-                              Genre_Admin
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="nc-icon nc-shop"></i> Pseudo Boutique</span>
-                            </div>
-                            <div class="col-6">
-                              Pseudo_Boutique
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="nc-icon nc-mobile"></i> Numero téléphone</span>
-                            </div>
-                            <div class="col-6">
-                              +221 000 00 00 00
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="nc-icon nc-email-85"></i> adresse email</span>
-                            </div>
-                            <div class="col-6">
-                              ojkl@mbmetanova.com
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="now-ui-icons location_pin"></i> Adresse complet</span>
-                            </div>
-                            <div class="col-6">
-                              Sénégal, Dakar, Kheurmassa
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="now-ui-icons location_pin"></i> Adresse Seconde</span>
-                            </div>
-                            <div class="col-6">
-                              Sénégal, Dakar, Fass HLM
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="nc-icon nc-map-big"></i> Ville</span>
-                            </div>
-                            <div class="col-6">
-                              Dakar
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="nc-icon nc-map-big"></i> Quartier</span>
-                            </div>
-                            <div class="col-6">
-                              Kheurmassa
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="nc-icon nc-map-big"></i> Rue</span>
-                            </div>
-                            <div class="col-6">
-                              8756
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="nc-icon nc-map-big"></i> Porte</span>
-                            </div>
-                            <div class="col-6">
-                              4785
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="now-ui-icons location_pin"></i> Lien Map</span>
-                            </div>
-                            <div class="col-6">
-                              Sénégal, Dakar, Kheurmassa
-                            </div>
-                          </div>
-                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="Profile" role="tabpanel">
+                  <div class="row justify-content-center">
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="nc-icon nc-single-02"></i> Nom</span>
                       </div>
-                      <div class="tab-pane" id="ModePayement" role="tabpanel">
-                          <h3 class="text-dark">Mode de Payment</h3>
-                          <p class="text-dark text-italic text-sm">
-                              <i class="now-ui-icons travel_info font-weight-bold text-danger"></i> Vous ne pouvez pas savegarder votre mode de payment 
-                          </p>
+                      <div class="col-6">
+                        Nom_Admin
                       </div>
-                      <div class="tab-pane" id="Factures" role="tabpanel">
-                          <h3 class="title"><i class="now-ui-icons education_paper"></i> Mes factures</h3>
-                          <div class="myaccount-table table-responsive text-center">
-                              <table class="table table-bordered">
-                                  <thead class="thead-light">
-                                      <tr>
-                                          <th class="text-center strong">N°</th>
-                                          <th class="text-center strong">DATE</th>
-                                          <th class="text-center strong">STATUS</th>
-                                          <th class="text-center strong">TOTAL</th>
-                                          <th class="text-center strong">ACTION</th>
-                                      </tr>
-                                  </thead>
-                                  <tbody>
-                                      <tr>
-                                          <td>1</td>
-                                          <td>22/01/2025</td>
-                                          <td><span class="text-warning text-uppercase strong"> <i class="fa fa-refresh"></i> En cour ... </span></td>
-                                          <td> 3000 F. CFA</td>
-                                          <td><a href="pannier" class="link text-uppercase strong rounded-0"><i class="fa fa-eye"></i> Voir </a></td>
-                                      </tr>
-                                      <tr>
-                                          <td>2</td>
-                                          <td>02/02/2025</td>
-                                          <td> <span class="text-success text-uppercase strong"> <i class="fa fa-check"></i> Validée </span></td>
-                                          <td> 200 F. CFA</td>
-                                          <td><a href="pannier" class="link text-uppercase strong rounded-0"><i class="fa fa-eye"></i> Voir </a></td>
-                                      </tr>
-                                      <tr>
-                                          <td>3</td>
-                                          <td>June 12, 2019</td>
-                                          <td><span class="text-info text-uppercase strong"> <i class="fa fa-truck"></i> Livraison </span></td>
-                                          <td> 990 F. CFA</td>
-                                          <td><a href="pannier" class="link text-uppercase strong rounded-0"><i class="fa fa-eye"></i> Voir </a></td>
-                                      </tr>
-                                  </tbody>
-                              </table>
-                          </div>
+                    </div>
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="nc-icon nc-single-02"></i> Prénom </span>
                       </div>
-                      <div class="tab-pane" id="Adresse" role="tabpanel">
-                          <h3 class="text-dark"><i class="now-ui-icons location_pin"></i> Adresse</h3>
-                          <div class="account-details-form">
-                              <form action="#">
-                                  <div class="row">
-                                      <div class="col-lg-6">
-                                          <div class="input-group input-lg">
-                                              <div class="input-group-prepend">
-                                                <span class="input-group-text">
-                                                  <i class="now-ui-icons location_pin"></i>
-                                                </span>
-                                              </div>
-                                              <input type="text" class="form-control" placeholder="Adresse complet">
-                                          </div>
-                                      </div>
-                                      <div class="col-lg-6">
-                                          <div class="input-group input-lg">
-                                              <div class="input-group-prepend">
-                                                <span class="input-group-text">
-                                                  <i class="now-ui-icons location_pin"></i>
-                                                </span>
-                                              </div>
-                                              <input type="text" class="form-control" placeholder="Seconde adresse">
-                                          </div>
-                                      </div>
-                                      <div class="col-lg-6">
-                                          <div class="input-group input-lg">
-                                              <div class="input-group-prepend">
-                                                <span class="input-group-text">
-                                                  <i class="fa fa-unlink"></i>
-                                                </span>
-                                              </div>
-                                              <input type="text" class="form-control" placeholder="Lien map (GPS)">
-                                          </div>
-                                      </div>
-                                  </div>
-                              </form>
-                          </div>
+                      <div class="col-6">
+                        Prenom_Admin
                       </div>
-                      <div class="tab-pane" id="Pannier" role="tabpanel">
-                          <h3 class="title"><i class="now-ui-icons shopping_cart-simple"></i> Pannier</h3>
-                          <div class="myaccount-table table-responsive text-center">
-                              <table class="table table-bordered">
-                                  <thead class="thead-light">
-                                      <tr>
-                                          <th class="text-center strong">N°</th>
-                                          <th class="text-center strong">DATE</th>
-                                          <th class="text-center strong">STATUS</th>
-                                          <th class="text-center strong">TOTAL</th>
-                                          <th class="text-center strong">ACTION</th>
-                                      </tr>
-                                  </thead>
-                                  <tbody>
-                                      <tr>
-                                          <td>1</td>
-                                          <td>22/01/2025</td>
-                                          <td><span class="text-warning text-uppercase strong"> <i class="nc-icon nc-refresh-69"></i> En cour ... </span></td>
-                                          <td> 3000 F. CFA</td>
-                                          <td><a href="pannier" class="link text-uppercase strong rounded-0"><i class="fa fa-eye"></i> Voir </a></td>
-                                      </tr>
-                                      <tr>
-                                          <td>2</td>
-                                          <td>02/02/2025</td>
-                                          <td> <span class="text-success text-uppercase strong"> <i class="fa fa-check"></i> Validée </span></td>
-                                          <td> 200 F. CFA</td>
-                                          <td><a href="pannier" class="link text-uppercase strong rounded-0"><i class="fa fa-eye"></i> Voir </a></td>
-                                      </tr>
-                                      <tr>
-                                          <td>3</td>
-                                          <td>June 12, 2019</td>
-                                          <td><span class="text-info text-uppercase strong"> <i class="fa fa-truck"></i> Livraison </span></td>
-                                          <td> 990 F. CFA</td>
-                                          <td><a href="pannier" class="link text-uppercase strong rounded-0"><i class="fa fa-eye"></i> Voir </a></td>
-                                      </tr>
-                                  </tbody>
-                              </table>
-                          </div>
+                    </div>
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="nc-icon nc-single-02"></i> Genre </span>
+                      </div>
+                      <div class="col-6">
+                        Genre_Admin
+                      </div>
+                    </div>
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="nc-icon nc-shop"></i> Pseudo Boutique</span>
+                      </div>
+                      <div class="col-6">
+                        Pseudo_Boutique
+                      </div>
+                    </div>
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="nc-icon nc-mobile"></i> Numero téléphone</span>
+                      </div>
+                      <div class="col-6">
+                        +221 000 00 00 00
+                      </div>
+                    </div>
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="nc-icon nc-email-85"></i> adresse email</span>
+                      </div>
+                      <div class="col-6">
+                        ojklmbmetanova.com
+                      </div>
+                    </div>
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="now-ui-icons location_pin"></i> Adresse
+                          complet</span>
+                      </div>
+                      <div class="col-6">
+                        Sénégal, Dakar, Kheurmassa
+                      </div>
+                    </div>
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="now-ui-icons location_pin"></i> Adresse
+                          Seconde</span>
+                      </div>
+                      <div class="col-6">
+                        Sénégal, Dakar, Fass HLM
+                      </div>
+                    </div>
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="nc-icon nc-map-big"></i> Ville</span>
+                      </div>
+                      <div class="col-6">
+                        Dakar
+                      </div>
+                    </div>
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="nc-icon nc-map-big"></i> Quartier</span>
+                      </div>
+                      <div class="col-6">
+                        Kheurmassa
+                      </div>
+                    </div>
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="nc-icon nc-map-big"></i> Rue</span>
+                      </div>
+                      <div class="col-6">
+                        8756
+                      </div>
+                    </div>
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="nc-icon nc-map-big"></i> Porte</span>
+                      </div>
+                      <div class="col-6">
+                        4785
+                      </div>
+                    </div>
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="now-ui-icons location_pin"></i> Lien Map</span>
+                      </div>
+                      <div class="col-6">
+                        Sénégal, Dakar, Kheurmassa
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="tab-pane" id="ModePayement" role="tabpanel">
+                  <h3 class="text-dark">Mode de Payment</h3>
+                  <p class="text-dark text-italic text-sm">
+                    <i class="now-ui-icons travel_info font-weight-bold text-danger"></i> Vous ne pouvez pas savegarder
+                    votre mode de payment
+                  </p>
+                </div>
+                <div class="tab-pane" id="Factures" role="tabpanel">
+                  <h3 class="title"><i class="now-ui-icons education_paper"></i> Mes factures</h3>
+                  <div class="myaccount-table table-responsive text-center">
+                    <table class="table table-bordered">
+                      <thead class="thead-light">
+                        <tr>
+                          <th class="text-center strong">N°</th>
+                          <th class="text-center strong">DATE</th>
+                          <th class="text-center strong">STATUS</th>
+                          <th class="text-center strong">TOTAL</th>
+                          <th class="text-center strong">ACTION</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>22/01/2025</td>
+                          <td><span class="text-warning text-uppercase strong"> <i class="fa fa-refresh"></i> En cour
+                              ... </span></td>
+                          <td> 3000 F. CFA</td>
+                          <td><a href="pannier" class="link text-uppercase strong rounded-0"><i class="fa fa-eye"></i>
+                              Voir </a></td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>02/02/2025</td>
+                          <td> <span class="text-success text-uppercase strong"> <i class="fa fa-check"></i> Validée
+                            </span></td>
+                          <td> 200 F. CFA</td>
+                          <td><a href="pannier" class="link text-uppercase strong rounded-0"><i class="fa fa-eye"></i>
+                              Voir </a></td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>June 12, 2019</td>
+                          <td><span class="text-info text-uppercase strong"> <i class="fa fa-truck"></i> Livraison
+                            </span></td>
+                          <td> 990 F. CFA</td>
+                          <td><a href="pannier" class="link text-uppercase strong rounded-0"><i class="fa fa-eye"></i>
+                              Voir </a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="tab-pane" id="Adresse" role="tabpanel">
+                  <h3 class="text-dark"><i class="now-ui-icons location_pin"></i> Adresse</h3>
+                  <div class="account-details-form">
+                    <form action="#">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="input-group input-lg">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                <i class="now-ui-icons location_pin"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Adresse complet">
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="input-group input-lg">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                <i class="now-ui-icons location_pin"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Seconde adresse">
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="input-group input-lg">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                <i class="fa fa-unlink"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Lien map (GPS)">
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="tab-pane" id="Pannier" role="tabpanel">
+                  <h3 class="title"><i class="now-ui-icons shopping_cart-simple"></i> Pannier</h3>
+                  <div class="myaccount-table table-responsive text-center">
+                    <table class="table table-bordered">
+                      <thead class="thead-light">
+                        <tr>
+                          <th class="text-center strong">N°</th>
+                          <th class="text-center strong">DATE</th>
+                          <th class="text-center strong">STATUS</th>
+                          <th class="text-center strong">TOTAL</th>
+                          <th class="text-center strong">ACTION</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>22/01/2025</td>
+                          <td><span class="text-warning text-uppercase strong"> <i class="nc-icon nc-refresh-69"></i> En
+                              cour ... </span></td>
+                          <td> 3000 F. CFA</td>
+                          <td><a href="pannier" class="link text-uppercase strong rounded-0"><i class="fa fa-eye"></i>
+                              Voir </a></td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>02/02/2025</td>
+                          <td> <span class="text-success text-uppercase strong"> <i class="fa fa-check"></i> Validée
+                            </span></td>
+                          <td> 200 F. CFA</td>
+                          <td><a href="pannier" class="link text-uppercase strong rounded-0"><i class="fa fa-eye"></i>
+                              Voir </a></td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>June 12, 2019</td>
+                          <td><span class="text-info text-uppercase strong"> <i class="fa fa-truck"></i> Livraison
+                            </span></td>
+                          <td> 990 F. CFA</td>
+                          <td><a href="pannier" class="link text-uppercase strong rounded-0"><i class="fa fa-eye"></i>
+                              Voir </a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
       </div>
-    <app-footer></app-footer>
+      <app-footer></app-footer>
+    </div>
   </div>
-</div>

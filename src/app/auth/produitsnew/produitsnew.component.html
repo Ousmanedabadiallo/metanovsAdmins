@@ -18,212 +18,120 @@
               </div>
               <div class="card-body">
                 <div class="account-details-form">
-                  <form action="#">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <small class="card-title">image pour profile du produit</small> <br>
-                        <div class="fileinput fileinput-new text-center">
-                          <div class="fileinput-new thumbnail">
-                            <img src="assets/images/default-avatar.png" class="col-12" alt="...">
-                          </div>
-                          <div class="fileinput-preview fileinput-exists thumbnail"></div>
-                        <div>
-                            <span class="btn btn-rose btn-xs btn-round btn-file">
-                              <span class="fileinput-new"><i class="nc-icon nc-image"></i> Select image du produit</span>
-                              <span class="fileinput-exists">Change</span>
-                              <input type="file" name="..." />
-                            </span>
-                            <a href="javascript:;" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
-                          </div>
+                <form [formGroup]="produitForm" (ngSubmit)="enregistrer()">
+                  <div class="row">
+                    <div class="col-lg-6 text-center">
+                      <small>image pour produit</small>
+                      <button class="btn btn-primary btn-sm btn-link btn-round col-10"> <i class="nc-icon nc-image"></i>
+                        inserer image </button>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="nc-icon nc-bag-16"></i>
+                          </span>
                         </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <small class="card-title text-center">image pour couverture de profile produit </small> <br>
-                        <div class="col-12">
-                          <img src="assets/images/bg-invoice-5.jpg" alt="...">
-                        </div>
-                        <div class="fileinput fileinput-new text-center" data-provides="fileinput">
-                          <div class="fileinput-preview fileinput-exists thumbnail"></div>
-                          <div>
-                            <span class="btn btn-rose btn-round btn-file">
-                              <span class="fileinput-new"><i class="nc-icon nc-image"></i> Select image</span>
-                              <span class="fileinput-exists">Change</span>
-                              <input type="file" name="..." />
-                            </span>
-                            <a href="javascript:;" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                          <div class="input-group input-lg">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                  <i class="nc-icon nc-bag-16 text-dark"></i>
-                                </span>
-                              </div>
-                              <input type="text" class="form-control" placeholder="Nom produit">
-                          </div>
-                      </div>
-                      <div class="col-lg-6">
-                          <div class="input-group input-lg">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                  <i class="now-ui-icons business_money-coins text-dark"></i>
-                                </span>
-                              </div>
-                              <input type="text" class="form-control" placeholder="Prix de produit">
-                          </div>
-                      </div>
-                      <div class="col-lg-6">
-                          <div class="input-group input-lg">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                  <i class="now-ui-icons business_money-coins text-dark"></i>
-                                </span>
-                              </div>
-                              <input type="text" class="form-control" placeholder="Ancien prix de produit">
-                          </div>
-                      </div>
-                      <div class="col-lg-6">
-                          <div class="input-group input-lg">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                  <i class="nc-icon text-dark nc-money-coins text-dark"></i>
-                                </span>
-                              </div>
-                              <input type="text" class="form-control" placeholder="Nombre de stocke">
-                          </div>
-                      </div>
-                      <div class="col-lg-6">
-                          <div class="input-group input-lg">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                  <i class="nc-icon text-dark nc-lock-circle-open"></i>
-                                </span>
-                              </div>
-                              <input type="text" class="form-control" placeholder="Garantie (Durée et conditions de la garantie)">
-                          </div>
-                          <label class="category" for="poids"></label>
-                      </div>
-                      <div class="col-lg-6">
-                          <div class="form-group">
-                            <label for="exampleFormControlSelect1"><i class="nc-icon text-dark nc-shop"></i> Boutique de produit </label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
-                          </div>
-                      </div>
-                      <div class="col-lg-6">
-                          <div class="form-group">
-                            <label for="exampleFormControlSelect1"><i class="nc-icon text-dark nc-tag-content"></i> Catégorie de produit </label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                              <option data-toggle="tab" href="#links1" role="tablist">1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
-                          </div>
-                      </div>
-                      <div class="col-lg-6">
-                          <div class="form-group">
-                            <label for="exampleFormControlSelect1"><i class="nc-icon text-dark nc-bookmark-2"></i> Marques de produits </label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
-                          </div>
-                      </div>
-                      <div class="col-lg-12 mt-4">
-                        <label for="exampleFormControlSelect1"><i class="nc-icon nc-support-17"></i> Selection couleur</label> <br>
-                        <div class="form-check form-check-inline">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Noir
-                            <span class="form-check-sign"></span>
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> Blanc
-                            <span class="form-check-sign"></span>
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"> Rouge
-                            <span class="form-check-sign"></span>
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4"> Blue
-                            <span class="form-check-sign"></span>
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5"> Vert
-                            <span class="form-check-sign"></span>
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6"> Jaune
-                            <span class="form-check-sign"></span>
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7"> Orange
-                            <span class="form-check-sign"></span>
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8"> Violet
-                            <span class="form-check-sign"></span>
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option9"> Marron
-                            <span class="form-check-sign"></span>
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option10"> Or 
-                            <span class="form-check-sign"></span>
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11"> Rose
-                            <span class="form-check-sign"></span>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="form-group col-lg-12 mt-4">
-                        <label class="form-label" for="descriptiftech">
-                          <i class="now-ui-icons education_paper text-dark"></i> Descriptif technique
-                        </label>
-                        <textarea name="" id="" cols="30" rows="10" class="form-control" id="descriptiftech" placeholder="Descriptif technique"></textarea>
-                        <label for="descriptiftech"> 500 caractères </label>
+                        <input type="text" class="form-control" placeholder="Nom produit" formControlName="nom">
                       </div>
                     </div>
-                  </form>
+                    <div class="col-lg-6">
+                      <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="nc-icon nc-bag-16"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Le modele du produit"
+                          formControlName="modele">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="nc-icon nc-bag-16"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="La marque du produit"
+                          formControlName="marque">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="nc-icon nc-bag-16"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="La quantité produit"
+                          formControlName="quantite">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="nc-icon nc-money-coins"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Prix de produit"
+                          formControlName="prix_unitaire">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="nc-icon nc-money-coins"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Prix de vente du produit"
+                          formControlName="prix_de_vente_unitaire">
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="nc-icon nc-money-coins"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Description du produit"
+                          formControlName="description">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1"><i class="nc-icon nc-shop"></i> Catégorie de produit
+                        </label>
+                        <select class="form-control" id="exampleFormControlSelect1"
+                          formControlName="categorie_produit_id">
+                          <option *ngFor="let categorie of categories" value="{{categorie.id}}">
+                            {{categorie.designation}}</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1"><i class="nc-icon nc-shop"></i> Boutique de produit
+                        </label>
+                        <select class="form-control" id="exampleFormControlSelect1" formControlName="boutique_id">
+                          <option *ngFor="let produit of boutiques" value="{{produit.id}}">
+                            {{produit.nom}}
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-center p-4">
+                    <hr>
+
+                    <button class="btn btn-primary col-10 btn-round btn-sm m-1" type="submit"> Enregistrer produit
+                    </button>
+                  </div>
+                </form>
                 </div>
-              </div>
-              <div class="card-footer text-center pb-4">
-                <hr>
-                <button class="btn btn-primary col-10 btn-round btn-sm m-1"> Enregistrer produit </button>
               </div>
             </div>
           </div>

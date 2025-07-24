@@ -20,11 +20,11 @@ export class BoutiqueService {
     return this.httpClient.get(this.url_ApiRest + 'Boutique/' + id);
   }
 
-  deleteUser(id: any) {
+  deleteBoutique(id: any) {
     return this.httpClient.delete(this.url_ApiRest + 'Boutique/' + id);
   }
 
-  putUser(id: any, data: any) {
+  putBoutique(id: any, data: any) {
     return this.httpClient.put(this.url_ApiRest + 'Boutique/' + id, data);
   }
 

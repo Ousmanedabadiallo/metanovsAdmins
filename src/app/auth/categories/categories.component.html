@@ -27,17 +27,14 @@
                         <i class="nc-icon nc-tag-content"></i> Catégories
                       </th>
                       <th>
-                        <i class="nc-icon nc-bag-16"></i> Produits
-                      </th>
-                      <th>
-                        <i class="nc-icon nc-shop"></i> Boutique
+                        <i class="nc-icon nc-bag-16"></i> Description
                       </th>
                       <th class="text-right">
                         Actions
                       </th>
                     </thead>
                     <tbody>
-                      <tr>
+                      <tr *ngFor="let categorie of categories">
                         <td>
                           <div class="row">
                             <div class="col-md-2 col-2">
@@ -46,24 +43,18 @@
                               </div>
                             </div>
                             <div class="col-md-7 col-7">
-                              Nom_Catégories 
+                              {{categorie.designation}} 
                               <br />
                               <span class="text-muted"><small> <i class="nc-icon nc-check-2"></i> Active</small></span>
                             </div>
                             <div class="col-md-3 col-3 text-right">
-                              
+                              {{categorie.description}} 
                             </div>
                           </div>                            
                         </td>
-                        <td>
-                          45 
-                        </td>
-                        <td>
-                          1578
-                        </td>
                         <td class="text-right">
-                          <a href="categories-modifier" class="btn btn-success btn-outline-success btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>
-                          <a href="categories-voir" class="btn btn-primary btn-outline-primary btn-round btn-sm m-1"> <i class="nc-icon nc-single-copy-04"></i> Voir </a>
+                          <a routerLink="/categories-modifier/{{categorie?.id}}" class="btn btn-success btn-outline-success btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>
+                          <a routerLink="/categories-voir/{{categorie?.id}}" class="btn btn-primary btn-outline-primary btn-round btn-sm m-1"> <i class="nc-icon nc-single-copy-04"></i> Voir </a>
                           <button class="btn btn-danger btn-outline-danger btn-round btn-sm m-1"> <i class="nc-icon nc-simple-remove"></i> Suprimer </button>
                         </td>
                       </tr>

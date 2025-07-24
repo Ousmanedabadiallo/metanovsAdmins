@@ -1,215 +1,176 @@
 <div class="wrapper ">
-    <app-header></app-header>
-    <div class="main-panel">
-      <!-- Navbar -->
-      <app-nav></app-nav>
-      <!-- End Navbar -->
-      <div class="content">
-        <div class="row">
-          <div class="col-md-12 mt-4">
-            <div class="card ">
-              <div class="card-header ">
-                <span class="text-dark h4 font-weight-bold text-uppercase">
-                  <i class="nc-icon nc-simple-add"></i> Nouveau boutique
-                </span>
-                <a href="boutiques" class="btn btn-primary btn-round btn-sm float float-right m-1"> <i class="nc-icon nc-bullet-list-67"></i> liste boutiques </a>
-              </div>
-              <div class="card-body ">
-                <div class="account-details-form">
-                    <form action="#">
-                        <div class="row">
-                          
-                          <div class="col-lg-4">
-                            <small class="card-title">image pour profile</small> <br>
-                            <div class="fileinput fileinput-new text-center">
-                              <div class="fileinput-new thumbnail">
-                                <img src="assets/images/default-avatar.png" alt="...">
-                              </div>
-                              <div class="fileinput-preview fileinput-exists thumbnail"></div>
-                              <div>
-                                <span class="btn btn-rose btn-round btn-file">
-                                  <span class="fileinput-new"><i class="nc-icon nc-image"></i> Select image</span>
-                                  <span class="fileinput-exists">Change</span>
-                                  <input type="file" name="..." />
-                                </span>
-                                <a href="javascript:;" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-lg-8">
-                              <small class="card-title">image pour couverture de profile</small> <br>
-                            <div class="col-12">
-                              <img src="assets/images/bg-invoice-5.jpg" alt="...">
-                            </div>
-                            <div class="fileinput fileinput-new text-center" data-provides="fileinput">
-                              <div class="fileinput-preview fileinput-exists thumbnail"></div>
-                              <div>
-                                <span class="btn btn-rose btn-round btn-file">
-                                  <span class="fileinput-new"><i class="nc-icon nc-image"></i> Select image</span>
-                                  <span class="fileinput-exists">Change</span>
-                                  <input type="file" name="..." />
-                                </span>
-                                <a href="javascript:;" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
-                              </div>
-                            </div>
-                          </div>
-                            <div class="col-lg-6">
-                                <div class="input-group input-lg">
-                                    <div class="input-group-prepend">
-                                      <span class="input-group-text">
-                                        <i class="nc-icon nc-shop"></i>
-                                      </span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="Nom boutique">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="input-group input-lg">
-                                    <div class="input-group-prepend">
-                                      <span class="input-group-text">
-                                        <i class="nc-icon nc-shop"></i>
-                                      </span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="Slogan boutique">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="input-group input-lg">
-                                    <div class="input-group-prepend">
-                                      <span class="input-group-text">
-                                        <i class="nc-icon nc-shop"></i>
-                                      </span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="Pseudo boutique">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="input-group input-lg">
-                                    <div class="input-group-prepend">
-                                      <span class="input-group-text">
-                                        <i class="nc-icon nc-mobile"></i>
-                                      </span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="Numero de téléphone">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="input-group input-lg">
-                                    <div class="input-group-prepend">
-                                      <span class="input-group-text">
-                                        <i class="nc-icon nc-email-85"></i>
-                                      </span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="adresse email">
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-6">
-                              <div class="input-group input-lg">
-                                  <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                      <i class="now-ui-icons location_pin"></i>
-                                    </span>
-                                  </div>
-                                  <input type="text" class="form-control" placeholder="Adresse complet">
-                              </div>
-                            </div>
-                          <div class="col-lg-6">
-                              <div class="input-group input-lg">
-                                  <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                      <i class="now-ui-icons location_pin"></i>
-                                    </span>
-                                  </div>
-                                  <input type="text" class="form-control" placeholder="Seconde adresse">
-                              </div>
-                          </div>
-                          <div class="col-lg-6">
-                              <div class="input-group input-lg">
-                                  <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                      <i class="nc-icon nc-map-big"></i>
-                                    </span>
-                                  </div>
-                                  <input type="text" class="form-control" placeholder="Ville">
-                              </div>
-                          </div>
-                          <div class="col-lg-6">
-                              <div class="input-group input-lg">
-                                  <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                      <i class="nc-icon nc-map-big"></i>
-                                    </span>
-                                  </div>
-                                  <input type="text" class="form-control" placeholder="Quartier">
-                              </div>
-                          </div>
-                          <div class="col-lg-6">
-                              <div class="input-group input-lg">
-                                  <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                      <i class="nc-icon nc-map-big"></i>
-                                    </span>
-                                  </div>
-                                  <input type="text" class="form-control" placeholder="Rue">
-                              </div>
-                          </div>
-                          <div class="col-lg-6">
-                              <div class="input-group input-lg">
-                                  <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                      <i class="nc-icon nc-map-big"></i>
-                                    </span>
-                                  </div>
-                                  <input type="text" class="form-control" placeholder="Porte">
-                              </div>
-                          </div>
-                          <div class="col-lg-6">
-                              <div class="input-group input-lg">
-                                  <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                      <i class="now-ui-icons location_pin"></i>
-                                    </span>
-                                  </div>
-                                  <input type="text" class="form-control" placeholder="Lien map (GPS)">
-                              </div>
-                          </div>
-                          <button class="col-12 btn btn-dark p-2 bg-light text-center text-dark" (click)="changerAffichage()">
-                            Créer un mot de passe 
-                          </button>
-                          <div class="col-lg-6" *ngIf="afficherMessage">
-                              <div class="input-group input-lg">
-                                  <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                      <i class="nc-icon nc-lock-circle-open"></i>
-                                    </span>
-                                  </div>
-                                  <input type="text" class="form-control" placeholder="Mot de passe">
-                              </div>
-                          </div>
-                          <div class="col-lg-6" *ngIf="afficherMessage">
-                              <div class="input-group input-lg">
-                                  <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                      <i class="nc-icon nc-lock-circle-open"></i>
-                                    </span>
-                                  </div>
-                                  <input type="text" class="form-control" placeholder="Confirme Mot de passe">
-                              </div>
-                          </div>
+  <app-header></app-header>
+  <div class="main-panel">
+    <!-- Navbar -->
+    <app-nav></app-nav>
+    <!-- End Navbar -->
+    <div class="content">
+      <div class="row">
+        <div class="col-md-12 mt-4">
+          <div class="card ">
+            <div class="card-header ">
+              <span class="text-dark h4 font-weight-bold text-uppercase">
+                <i class="nc-icon nc-simple-add"></i> Nouveau boutique
+              </span>
+              <a href="boutiques" class="btn btn-primary btn-round btn-sm float float-right m-1"> <i
+                  class="nc-icon nc-bullet-list-67"></i> liste boutiques </a>
+            </div>
+            <div class="card-body ">
+              <div class="account-details-form">
+                <form [formGroup]="boutiqueForm" (ngSubmit)="enregistrer()">
+                  <div class="row">
+
+                    <div class="col-lg-4">
+                      <small class="card-title">image pour profile</small> <br>
+                      <div class="fileinput fileinput-new text-center">
+                        <div class="fileinput-new thumbnail">
+                          <img src="assets/images/default-avatar.png" alt="...">
                         </div>
-                    </form>
-                </div>
-              </div>
-              <div class="card-footer text-center p-4">
-                <hr>
-                
-                <button class="btn btn-primary col-10 btn-round btn-sm m-1"> Enregistrer boutique </button>
+                        <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                        <div>
+                          <span class="btn btn-rose btn-round btn-file">
+                            <span class="fileinput-new"><i class="nc-icon nc-image"></i> Select image</span>
+                            <span class="fileinput-exists">Change</span>
+                            <input type="file" name="..." />
+                          </span>
+                          <a href="javascript:;" class="btn btn-danger btn-round fileinput-exists"
+                            data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <small class="card-title">image pour couverture de profile</small> <br>
+                      <div class="col-12">
+                        <img src="assets/images/bg-invoice-5.jpg" alt="...">
+                      </div>
+                      <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                        <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                        <div>
+                          <span class="btn btn-rose btn-round btn-file">
+                            <span class="fileinput-new"><i class="nc-icon nc-image"></i> Select image</span>
+                            <span class="fileinput-exists">Change</span>
+                            <input type="file" name="..." />
+                          </span>
+                          <a href="javascript:;" class="btn btn-danger btn-round fileinput-exists"
+                            data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="nc-icon nc-shop"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Nom boutique" formControlName="nom">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="nc-icon nc-shop"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Slogan boutique" formControlName="logo">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="nc-icon nc-mobile"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Numero de téléphone"
+                          formControlName="telephone">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="nc-icon nc-email-85"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="adresse email" formControlName="email">
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="now-ui-icons location_pin"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Adresse complet" formControlName="adresse">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="nc-icon nc-map-big"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Ville" formControlName="ville">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="nc-icon nc-map-big"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Quartier" formControlName="quartier">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="nc-icon nc-map-big"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Rue" formControlName="rue">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="nc-icon nc-map-big"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Porte" formControlName="porte">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="now-ui-icons location_pin"></i>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Lien map (GPS)" formControlName="baderole">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-center p-4">
+                    <hr>
+
+                    <button class="btn btn-primary col-10 btn-round btn-sm m-1"> Enregistrer</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <app-footer></app-footer>
     </div>
+    <app-footer></app-footer>
   </div>
+</div>

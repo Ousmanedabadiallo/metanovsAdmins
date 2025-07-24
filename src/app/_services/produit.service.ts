@@ -20,11 +20,11 @@ export class ProduitService {
     return this.httpClient.get(this.url_ApiRest + 'Produit/' + id);
   }
 
-  deleteUser(id: any) {
+  deleteProduit(id: any) {
     return this.httpClient.delete(this.url_ApiRest + 'Produit/' + id);
   }
 
-  putUser(id: any, data: any) {
+  putProduit(id: any, data: any) {
     return this.httpClient.put(this.url_ApiRest + 'Produit/' + id, data);
   }
 

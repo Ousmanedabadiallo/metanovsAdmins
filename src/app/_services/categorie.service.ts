@@ -20,17 +20,13 @@ export class CategorieService {
     return this.httpClient.get(this.url_ApiRest + 'Categorie_produit/' + id);
   }
 
-  deleteUser(id: any) {
+  deleteCategorie(id: any) {
     return this.httpClient.delete(this.url_ApiRest + 'Categorie_produit/' + id);
   }
 
-  putUser(id: any, data: any) {
+  putCategorie(id: any, data: any) {
     return this.httpClient.put(this.url_ApiRest + 'Categorie_produit/' + id, data);
   }
-
-  // putstatutUser(id: any, data: any) {
-  //   return this.httpClient.put(this.url_ApiRest + 'Userstatut/' + id, data);
-  // }
 
   postCategorie(data: any) {
     return this.httpClient.post(this.url_ApiRest + 'Categorie_produit', data);

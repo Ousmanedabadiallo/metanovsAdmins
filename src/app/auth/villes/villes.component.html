@@ -37,7 +37,7 @@
                         </th>
                       </thead>
                       <tbody>
-                        <tr>
+                        <tr *ngFor="let ville of villes">
                           <td>
                             <div class="row">
                               <div class="col-md-4 col-4">
@@ -47,21 +47,21 @@
                                   </div>
                               </div>
                               <div class="col-md-8 col-8">
-                                Nom_villes 
+                                {{ville.nom}}
                                 <br />
                                 <span class="text-muted"><small> <i class="nc-icon nc-check-2"></i> Active</small></span>
                               </div>
                             </div>                            
                           </td>
                           <td>
-                            Nom_Pays 
+                            {{ville?.pays.designation}} 
                           </td>
                           <td>
                             1578
                           </td>
                           <td class="text-right">
-                            <a href="villes-modifier" class="btn btn-success btn-outline-success  btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>
-                            <a href="villes-voir" class="btn btn-primary btn-outline-primary  btn-round btn-sm m-1"> <i class="nc-icon nc-single-copy-04"></i> Voir </a>
+                            <a routerLink="/villes-modifier/{{ville?.id}}" class="btn btn-success btn-outline-success  btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>
+                            <a routerLink="/villes-voir/{{ville?.id}}" class="btn btn-primary btn-outline-primary  btn-round btn-sm m-1"> <i class="nc-icon nc-single-copy-04"></i> Voir </a>
                             <button class="btn btn-danger btn-outline-danger btn-round btn-sm m-1"> <i class="nc-icon nc-simple-remove"></i> Suprimer </button>
                           </td>
                         </tr>

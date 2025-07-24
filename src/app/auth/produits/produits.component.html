@@ -37,7 +37,7 @@
                         </th>
                       </thead>
                       <tbody>
-                        <tr>
+                        <tr *ngFor="let produit of produits">
                           <td>
                             <div class="row">
                               <div class="col-2">
@@ -46,7 +46,7 @@
                                 </div>
                               </div>
                               <div class="col-7">
-                                Nom_Produit 
+                                {{produit.nom}} 
                                 <br />
                                 <span class="text-muted"><small> <i class="nc-icon nc-check-2"></i> Active</small></span>
                               </div>
@@ -56,14 +56,14 @@
                             </div>                            
                           </td>
                           <td>
-                            Nom_categorie
+                            {{produit?.categorie_produit.designation}}
                           </td>
                           <td>
-                            Nom_Boutique
+                            {{produit?.boutique.nom}}
                           </td>
                           <td class="text-right">
-                            <a href="produits-modifier" class="btn btn-success btn-outline-success  btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>
-                            <a href="produits-voir" class="btn btn-primary btn-outline-primary  btn-round btn-sm m-1"> <i class="nc-icon nc-single-copy-04"></i> Voir </a>
+                            <a routerLink="/produits-modifier/{{produit?.id}}" class="btn btn-success btn-outline-success  btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>
+                            <a routerLink="/produits-voir/{{produit?.id}}" class="btn btn-primary btn-outline-primary  btn-round btn-sm m-1"> <i class="nc-icon nc-single-copy-04"></i> Voir </a>
                             <button class="btn btn-danger btn-outline-danger btn-round btn-sm m-1"> <i class="nc-icon nc-simple-remove"></i> Suprimer </button>
                           </td>
                         </tr>

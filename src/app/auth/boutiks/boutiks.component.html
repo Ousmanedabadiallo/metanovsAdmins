@@ -37,7 +37,7 @@
                         </th>
                       </thead>
                       <tbody>
-                        <tr>
+                        <tr *ngFor="let boutique of boutiques">
                           <td>
                             <div class="row">
                               <div class="col-md-2 col-2">
@@ -46,7 +46,7 @@
                                 </div>
                               </div>
                               <div class="col-md-7 col-7">
-                                Boutique 
+                                {{boutique.nom}} 
                                 <br />
                                 <span class="text-muted"><small> <i class="nc-icon nc-check-2"></i> Active</small></span>
                               </div>
@@ -56,15 +56,15 @@
                             </div>                            
                           </td>
                           <td>
-                            <i class="nc-icon nc-mobile"></i> +221 000 00 00 00 
+                            <i class="nc-icon nc-mobile"></i> {{boutique.telephone}}  
                           </td>
                           <td>
                             <i class="now-ui-icons location_pin"></i> 
-                            Sénégal, Dakar, Kheurmassa, <br> Rue : 1255, Porte : 258
+                            {{boutique.pays}} , {{boutique.region}}, {{boutique.ville}}, <br> Rue : {{boutique.rue}}, Porte : {{boutique.porte}}
                           </td>
                           <td class="text-right">
-                            <a href="boutiques-modifier" class="btn btn-success btn-outline-success  btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>
-                            <a href="boutiques-voir" class="btn btn-primary btn-outline-primary  btn-round btn-sm m-1"> <i class="nc-icon nc-single-copy-04"></i> Voir </a>
+                            <a routerLink="/boutiques-modifier/{{boutique?.id}}" class="btn btn-success btn-outline-success  btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>
+                            <a routerLink="/boutiques-voir/{{boutique?.id}}" class="btn btn-primary btn-outline-primary  btn-round btn-sm m-1"> <i class="nc-icon nc-single-copy-04"></i> Voir </a>
                             <button class="btn btn-danger btn-outline-danger btn-round btn-sm m-1"> <i class="nc-icon nc-simple-remove"></i> Suprimer </button>
                           </td>
                         </tr>

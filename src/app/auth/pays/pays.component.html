@@ -27,17 +27,14 @@
                           <i class="nc-icon nc-map-big"></i> Pays
                         </th>
                         <th class="col-2">
-                          <i class="nc-icon nc-pin-3"></i> Villes
-                        </th>
-                        <th class="col-2">
-                          <i class="nc-icon nc-tap-01"></i> Points
+                          <i class="nc-icon nc-tap-01"></i> Indicatif
                         </th>
                         <th class="text-right">
                           Actions
                         </th>
                       </thead>
                       <tbody>
-                        <tr>
+                        <tr *ngFor="let p of pays">
                           <td>
                             <div class="row">
                               <div class="col-md-4 col-4">
@@ -47,21 +44,21 @@
                                   </div>
                               </div>
                               <div class="col-md-8 col-8">
-                                Nom_villes 
+                                {{p.designation}} 
                                 <br />
                                 <span class="text-muted"><small> <i class="nc-icon nc-check-2"></i> Active</small></span>
                               </div>
                             </div>                            
                           </td>
                           <td>
-                            Nom_Pays 
+                            {{p.indicatif}} 
                           </td>
                           <td>
                             1578
                           </td>
                           <td class="text-right">
-                            <a href="pays-modifier" class="btn btn-success btn-outline-success  btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>
-                            <a href="pays-voir" class="btn btn-primary btn-outline-primary  btn-round btn-sm m-1"> <i class="nc-icon nc-single-copy-04"></i> Voir </a>
+                            <a routerLink="/pays-modifier/{{p?.id}}" href="" class="btn btn-success btn-outline-success  btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>
+                            <a routerLink="/pays-voir/{{p?.id}}" href="" class="btn btn-primary btn-outline-primary  btn-round btn-sm m-1"> <i class="nc-icon nc-single-copy-04"></i> Voir </a>
                             <button class="btn btn-danger btn-outline-danger btn-round btn-sm m-1"> <i class="nc-icon nc-simple-remove"></i> Suprimer </button>
                           </td>
                         </tr>

@@ -35,7 +35,7 @@
                         </th>
                       </thead>
                       <tbody>
-                        <tr>
+                        <tr *ngFor="let user of currentUser">
                           <td>
                             <div class="row">
                               <div class="col-4">
@@ -44,25 +44,25 @@
                                 </div>
                               </div>
                               <div class="col-7">
-                                Nom_admin
+                                {{user.nom}} {{user.prenom}}
                                 <br />
                                 <span class="text-muted"><small> <i class="nc-icon nc-check-2"></i> Active</small></span>
                               </div>
                               <div class="col-md-3 col-3 text-right">
                                 
                               </div>
-                            </div>                           
+                            </div>
                           </td>
                           <td>
-                             +221 000 00 00 00 <br>
-                             bonjour@metanova.com
-                          </td>
+                             {{user.telephone}} <br>
+                             {{user.email}}
+                          </td> 
                           <td>
-                            Sénégal, Dakar, Kheurmassa, <br> Rue : 1255, Porte : 258
+                            {{user.pays}}, {{user.ville}}, {{user.quartier}}, <br> Rue : {{user.rue}}, Porte : {{user.porte}}
                           </td>
                           <td class="text-right">
-                            <a href="users-modifier" class="btn btn-success btn-outline-success  btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>
-                            <a href="users-voir" class="btn btn-primary btn-outline-primary  btn-round btn-sm m-1"> <i class="nc-icon nc-single-copy-04"></i> Voir </a>
+                            <a routerLink="/users-modifier/{{user?.id}}" class="btn btn-success btn-outline-success  btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>
+                            <a routerLink="/users-voir/{{user?.id}}" class="btn btn-primary btn-outline-primary  btn-round btn-sm m-1"> <i class="nc-icon nc-single-copy-04"></i> Voir </a>
                             <button class="btn btn-danger btn-outline-danger btn-round btn-sm m-1"> <i class="nc-icon nc-simple-remove"></i> Suprimer </button>
                           </td>
                         </tr>

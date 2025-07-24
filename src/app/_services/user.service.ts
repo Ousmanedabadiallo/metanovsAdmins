@@ -15,6 +15,10 @@ export class UserService {
     return this.httpClient.post(this.url_ApiRest + 'Login', data);
   }
 
+  register(data: any) {
+    return this.httpClient.post(this.url_ApiRest + 'Register', data);
+  }
+
   public getUser() {
     return this.httpClient.get(this.url_ApiRest + 'Users');
   }
@@ -33,6 +37,10 @@ export class UserService {
 
   putUser(id: any, data: any) {
     return this.httpClient.put(this.url_ApiRest + 'User/' + id, data);
+  }
+
+  putModifypassword(id: any, data: any) {
+    return this.httpClient.put(this.url_ApiRest + 'Modifypassword/' + id, data);
   }
 
   putstatutUser(id: any, data: any) {
