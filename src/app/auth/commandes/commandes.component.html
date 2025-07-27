@@ -1,1 +1,104 @@
-<p>commandes works!</p>
+<div class="wrapper ">
+    <app-header></app-header>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <app-nav></app-nav>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="row mt-4">
+          <div class="col-md-12 mt-4">
+            <div class="card">
+              <div class="card-header pb-2">
+                <span class="text-dark h4 text-uppercase font-weight-bold">
+                  <i class="nc-icon nc-bullet-list-67"></i> &nbsp; Liste Commandes
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="card card-body card-collapse" id="accordion" role="tablist" aria-multiselectable="false">
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 border-bottom row border-bottom border-radius-lg" role="tab" id="headingOne">
+                <div class="col-4 col-lg-4 col-md-12 col-sm-12 row"  data-toggle="collapse" data-parent="#accordion" href="#Produit01" aria-expanded="true" aria-controls="Produit01">
+                  <div class="row">
+                    <div class="col-md-3 col-3">
+                      <div class="avatar">
+                        <img src="assets/images/apple-touch-icon-114x114.png" alt="Circle Image" class="rounded img-raised img-no-padding img-responsive">
+                      </div>
+                    </div>
+                    <div class="col-md-9 col-9">
+                      Commande 
+                      <br />
+                      <span class="text-muted"><small> <i class="nc-icon nc-check-2"></i> Active</small></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-5 col-lg-5 col-md-12 col-sm-12 small">
+                  <span class="font-weight-bold"><i class="now-ui-icons users_circle-08"></i> Nom_Utilisateur</span> |
+                  <br>
+                  <i class="nc-icon nc-mobile"></i> +221 000 00 00 00 | <br>
+                  <i class="now-ui-icons location_pin"></i> 
+                  Sénégal, Dakar, Kheurmassa, <br> Rue : 1255, Porte : 258 <br>
+                  <span class="small font-weight-bold"><i class="nc-icon nc-calendar-60"></i> le : 00/00/0000 </span>
+                </div>
+                <div class="col-3 col-lg-3 col-md-12 col-sm-12">
+                  <button class="btn btn-success btn-outline-success btn-round btn-sm m-1"> <i class="nc-icon nc-check-2"></i> Valider </button>
+                  <button class="btn btn-danger btn-outline-danger btn-round btn-sm m-1"> <i class="nc-icon nc-simple-remove"></i> Annuler </button>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 ml-2 pt-4 pb-4 bg-white col-lg-12 col-md-12 col-sm-12 mb-2 pb-2 row border-bottom accordion-collapse collapse" id="Produit01" role="tabpanel" aria-labelledby="Produit01">
+            <div class="col-4 col-lg-4 col-md-12 col-sm-12 row"  data-toggle="collapse" data-parent="#accordion" href="#Produit01" aria-expanded="true" aria-controls="Produit01">
+              <div class="row">
+                <div class="col-md-3 col-3 ml-4">
+                  <div class="avatar">
+                    <img src="assets/images/apple-touch-icon-114x114.png" alt="Circle Image" class="rounded img-raised img-no-padding img-responsive">
+                  </div>
+                </div>
+                <div class="col-md-7 col-7">
+                  Nom_Produit 
+                  <br />
+                  <span class="text-muted"><small> <i class="nc-icon nc-check-2"></i> Active</small></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 col-lg-5 col-md-12 col-sm-12">
+              <a href="marques" class="text-dark "> <i class="now-ui-icons location_bookmark"></i>&nbsp;marque </a> | 
+              <a href="categories" class="text-dark "> <i class="now-ui-icons shopping_tag-content"></i>&nbsp;catégorie </a>
+            </div>
+            <div class="col-3 col-lg-3 col-md-12 col-sm-12">
+              <span class="badge badge-default"> <i class="nc-icon nc-money-coins"></i> &nbsp; 100 f</span> &nbsp; 
+              <span class="badge badge-default"> X 28</span> &nbsp;
+              <span class="badge badge-primary"> <i class="nc-icon nc-money-coins"></i> &nbsp; 2800</span> &nbsp;
+            </div>
+          </div>
+          <div class="col-12 ml-2 pt-4 pb-4 bg-white col-lg-12 col-md-12 col-sm-12 mb-2 pb-2 row border-bottom accordion-collapse collapse" id="Produit01" role="tabpanel" aria-labelledby="Produit01">
+            <div class="col-4 col-lg-4 col-md-12 col-sm-12 row"  data-toggle="collapse" data-parent="#accordion" href="#Produit01" aria-expanded="true" aria-controls="Produit01">
+              <div class="row">
+                <div class="col-md-3 col-3 ml-4">
+                  <div class="avatar">
+                    <img src="assets/images/apple-touch-icon-114x114.png" alt="Circle Image" class="rounded img-raised img-no-padding img-responsive">
+                  </div>
+                </div>
+                <div class="col-md-7 col-7">
+                  Nom_Produit 
+                  <br />
+                  <span class="text-muted"><small> <i class="nc-icon nc-check-2"></i> Active</small></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 col-lg-5 col-md-12 col-sm-12">
+              <a href="marques" class="text-dark "> <i class="now-ui-icons location_bookmark"></i>&nbsp;marque </a> | 
+              <a href="categories" class="text-dark "> <i class="now-ui-icons shopping_tag-content"></i>&nbsp;catégorie </a>
+            </div>
+            <div class="col-3 col-lg-3 col-md-12 col-sm-12">
+              <span class="badge badge-default"> <i class="nc-icon nc-money-coins"></i> &nbsp; 100 f</span> &nbsp; 
+              <span class="badge badge-default"> X 28</span> &nbsp;
+              <span class="badge badge-primary"> <i class="nc-icon nc-money-coins"></i> &nbsp; 2800</span> &nbsp;
+            </div>
+          </div>
+        </div>
+      </div>
+      <app-footer></app-footer>
+    </div>
+  </div>

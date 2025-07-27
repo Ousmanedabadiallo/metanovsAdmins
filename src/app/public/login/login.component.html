@@ -1,6 +1,6 @@
 <div class="wrapper">
   <div class="page-header align-items-start min-vh-100"
-    style="background-image: url('assets/images/9579709.jpg'); background-size: cover; background-position: top center; min-height: 700px;"
+    style="background-image: url('assets/images/bg-6.jpg'); background-size: cover; background-position: top center; min-height: 700px;"
     loading="lazy">
     <span class="mask bg-gradient-dark opacity-6"></span>
     <div class="container my-auto">
@@ -11,39 +11,40 @@
               <div class="card-header text-center">
                 <div class="social-line">
                   <a href="#pablo" class="btn btn-neutral btn-facebook btn-icon btn-round"
-                    style="background-image:url(assets/images/32755.jpg); background-size: 100% 100%;">
+                    style="background-image:url(assets/images/v_logo_5.png); background-size: 100% 100%;">
                   </a>
                   <a href="#pablo" class="btn btn-neutral btn-twitter btn-icon btn-lg btn-round"
-                    style="background-image:url(assets/images/logo.png); background-size: cover">
+                    style="background-image:url(assets/images/v_logo_1.png); background-size: cover">
 
                   </a>
                   <a href="#pablo" class="btn btn-neutral btn-google btn-icon btn-round"
-                    style="background-image:url(assets/images/32784.jpg); background-size: 200% 200%; position: relative;">
+                    style="background-image:url(assets/images/v_logo_6.png); background-size: 100% 100%; position: relative;">
                   </a>
                 </div>
-                <h3 class="card-title title-up">
+                <h3 class="card-title font-weight-bold text-dark title-up">
                   <i class="now-ui-icons users_circle-08"></i> Se connecter
                 </h3>
               </div>
               <div class="card-body">
                 <div class="input-group no-border">
                   <div class="input-group-prepend">
-                    <span class="input-group-text">
+                    <span class="input-group-text text-dark">
                       <i class="now-ui-icons users_circle-08"></i>
                     </span>
                   </div>
                   <input type="text" class="form-control" placeholder="Votre email" formControlName="email">
+                  <a class="text-right small text-danger col-12" href="auth-reset">
+                    <div *ngIf="control('email')?.invalid && (control('email')?.dirty || control('email')?.touched)"
+                      class="alertmsg">
 
-                  <div *ngIf="control('email')?.invalid && (control('email')?.dirty || control('email')?.touched)"
-                    class="alertmsg">
-
-                    <div *ngIf="control('email')?.errors?.['required']">
-                      Ce champs est obligatoire
+                      <div *ngIf="control('email')?.errors?.['required']">
+                        Ce champs est obligatoire (<i class="now-ui-icons users_circle-08"></i> Login)
+                      </div>
                     </div>
-                  </div>
-                  <div class="input-group no-border">
+                  </a>
+                  <div class="input-group no-border mt-2">
                     <div class="input-group-prepend">
-                      <span class="input-group-text">
+                      <span class="input-group-text text-dark">
                         <i class="nc-icon nc-lock-circle-open"></i>
                       </span>
                     </div>
@@ -52,12 +53,17 @@
                     <div
                       *ngIf="control('password')?.invalid && (control('password')?.dirty || control('password')?.touched)"
                       class="alertmsg">
-
-                      <div *ngIf="control('password')?.errors?.['required']">
-                        Ce champs est obligatoire
-                      </div>
                     </div>
-                    <a class="text-right text-xs col-12 mt-1" href="auth-reset">
+                    
+                    <a class="text-right small col-12" href="auth-reset">
+                      <div class="col-12"
+                        *ngIf="control('password')?.invalid && (control('password')?.dirty || control('password')?.touched)">
+                        <div *ngIf="control('password')?.errors?.['required']" class="text-danger">
+                          Ce champs est obligatoire (<i class="nc-icon nc-lock-circle-open"></i> Mot de Passe)
+                        </div>
+                      </div>
+                    </a>
+                    <a class="text-right text-xs text-dark col-12 mt-1" href="auth-reset">
                       <i class="nc-icon nc-lock-circle-open"></i> mot de passe oublié ?
                     </a>
                   </div>
@@ -73,39 +79,18 @@
         </div>
       </div>
     </div>
-    <footer class="footer position-absolute bottom-2 py-2 w-100">
-      <div class="container">
-        <div class="row align-items-center justify-content-lg-between">
-          <div class="col-12 col-md-6 my-auto">
-            <div class="copyright text-center text-sm text-white text-lg-start">
-              ©
-              <script>
-                document.write(new Date().getFullYear())
-              </script>,
-              made with <i class="fa fa-heart" aria-hidden="true"></i> by
-              <a href="https://www.creative-tim.com" class="font-weight-bold text-white" target="_blank">Creative
-                Tim</a>
-              for a better web.
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-              <li class="nav-item">
-                <a href="https://www.creative-tim.com" class="nav-link text-white" target="_blank">Creative Tim</a>
-              </li>
-              <li class="nav-item">
-                <a href="https://www.creative-tim.com/presentation" class="nav-link text-white" target="_blank">About
-                  Us</a>
-              </li>
-              <li class="nav-item">
-                <a href="https://www.creative-tim.com/blog" class="nav-link text-white" target="_blank">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a href="https://www.creative-tim.com/license" class="nav-link pe-0 text-white"
-                  target="_blank">License</a>
-              </li>
-            </ul>
-          </div>
+    <hr>
+    <footer class="footer" data-background-color="black">
+      <div class=" container ">
+        <nav>
+          <i class="fas fa-cc-paypal m-2 text-sm"></i>
+          <i class="fas fa-cc-visa m-2 text-sm"></i>
+          <i class="fas fa-cc-mastercard m-2 text-sm"></i>
+          <i class="fas fa-cc-discover m-2 text-sm"></i>
+          <i class="fas fa-cc-amex m-2 text-sm"></i>
+        </nav>
+        <div class="copyright" id="copyright">
+          &copy; 2025 <span class="text-uppercase font-weight-bold text-primary">Admin • Metanov </span>. Réserve tous les droits.
         </div>
       </div>
     </footer>

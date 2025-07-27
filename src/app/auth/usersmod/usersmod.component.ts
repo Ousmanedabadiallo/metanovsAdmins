@@ -19,6 +19,11 @@ export class UsersmodComponent {
   typeusers: any;
   boutiques: any;
 
+  afficherMessage: boolean = false;
+
+  changerAffichage() {
+    this.afficherMessage = !this.afficherMessage;
+  }
   constructor(private activatedRouter: ActivatedRoute,
     private typeuserService: TypeuserService, private boutiqueService: BoutiqueService,
     private userService: UserService, private router: Router, private formeBuilder: FormBuilder) {

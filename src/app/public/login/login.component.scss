@@ -14,3 +14,19 @@
     linear-gradient(120deg,#f4bd0e ,green, rgba(0,255,0,0) 190.71%),
     linear-gradient(336deg, green, rgba(0,0,255,0) 70.71%);
             }
+.card-signup{
+    border-radius: 15px;
+    background:#ccccccaa;
+    background: linear-gradient(217deg, #ffffff,#ccccccaa,#ccccccaa,#ccccccaa,#ccccccaa, rgba(255,0,0,0) 70.71%),
+    linear-gradient(120deg,#ffffff,#ccccccaa,#ccccccaa,#ccccccaa, rgba(0,255,0,0) 190.71%),
+    linear-gradient(336deg, #ccccccaa,#ccccccaa,#ccccccaa, rgba(0,0,255,0) 70.71%);
+}
+.tesh{
+    text-shadow: #000 1px 1px;
+}
+.text-danger{
+    color: #ff0000;
+}
+.text-dark{
+    color: #000;
+}
