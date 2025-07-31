@@ -59,6 +59,7 @@ import { LivraisonsgestsComponent } from './livraisonsgests/livraisonsgests.comp
 const routes: Routes = [
     { path: '', pathMatch: 'full', redirectTo: 'accueil'},
     { path: 'accueil', component: AcceuilComponent, data: { title: 'Tableau de bord | Admin • METATNOV' }},
+    { path: 'admins', component: AcceuilComponent, data: { title: 'Admin tableau de bord  | Admin • METATNOV' }},
     { path: 'profile', component: ProfileComponent, data: { title: 'Profile | Admin • METATNOV' }},
     { path: 'password', component: PasswordComponent, data: { title: 'Modifier mot de passe | Admin • METATNOV' }},
     { path: 'pannier', component: CardComponent, data: { title: 'Pannier | Admin • METATNOV' }},

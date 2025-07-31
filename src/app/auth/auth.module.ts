@@ -62,6 +62,7 @@ import { UsersvoirComponent } from './usersvoir/usersvoir.component';
 import { PasswordComponent } from './password/password.component';
 import { MobilesComponent } from './produitsnew/mobiles/mobiles.component';
 import { LivraisonsgestsComponent } from './livraisonsgests/livraisonsgests.component';
+import { AdminsComponent } from './admins/admins.component';
 
 @NgModule({
     declarations: [
@@ -123,7 +124,8 @@ import { LivraisonsgestsComponent } from './livraisonsgests/livraisonsgests.comp
       UsersvoirComponent,
       PasswordComponent,
       MobilesComponent,
-      LivraisonsgestsComponent
+      LivraisonsgestsComponent,
+      AdminsComponent
     ],
     imports: [
       CommonModule,
