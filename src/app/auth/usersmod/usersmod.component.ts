@@ -90,6 +90,7 @@ export class UsersmodComponent {
         second_adresse: this.formeBuilder.control(result.second_adresse)
       });
     });
+    this.get_type_user();
   }
 
   get_type_user() {

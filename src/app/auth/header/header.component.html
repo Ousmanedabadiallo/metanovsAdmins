@@ -12,19 +12,19 @@
     </div>
     <div class="sidebar-wrapper">
       <ul class="nav">
-        <li class="active ">
+        <li class="active " *ngIf="currentUser?.typeuser_id == 1">
           <a href="admins">
             <i class="nc-icon nc-layout-11"></i>
             <p>Admin de bord</p>
           </a>
         </li>
-        <li class="active ">
+        <li class="active " *ngIf="currentUser?.typeuser_id != 1">
           <a href="accueil">
             <i class="nc-icon nc-layout-11"></i>
             <p>tableau de bord</p>
           </a>
         </li>
-        <li>
+        <li *ngIf="currentUser?.typeuser_id == 1">
           <a data-toggle="collapse" href="#pagesExamples">
             <i class="nc-icon nc-shop"></i>
             <p>Boutiques <b class="caret"></b></p>
@@ -46,7 +46,7 @@
             </ul>
           </div>
         </li>
-        <li>
+        <li *ngIf="currentUser?.typeuser_id < 3">
           <a data-toggle="collapse" href="#pagesProduit">
             <i class="nc-icon nc-bag-16"></i>
             <p>Produits <b class="caret"></b></p>
@@ -68,7 +68,7 @@
             </ul>
           </div>
         </li>
-        <li>
+        <li *ngIf="currentUser?.typeuser_id == 1">
           <a data-toggle="collapse" href="#pagescategorie">
             <i class="nc-icon nc-tag-content"></i>
             <p>catégories <b class="caret"></b></p>
@@ -85,42 +85,6 @@
                 <a href="categories">
                   <span class="sidebar-mini-icon"><i class="nc-icon nc-bullet-list-67"></i></span>
                   <span class="sidebar-normal"> Liste catégories </span>
-                </a>
-              </li>
-            </ul>
-            <ul class="nav">
-              <li>
-                <a href="categoriessous-new">
-                  <span class="sidebar-mini-icon"><i class="nc-icon nc-simple-add"></i></span>
-                  <span class="sidebar-normal"> Nouveau sous-catégorie </span>
-                </a>
-              </li>
-              <li>
-                <a href="categoriessous">
-                  <span class="sidebar-mini-icon"><i class="nc-icon nc-bullet-list-67"></i></span>
-                  <span class="sidebar-normal"> Liste sous-catégories </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <a data-toggle="collapse" href="#pagesmarque">
-            <i class="now-ui-icons location_bookmark"></i>
-            <p>marques <b class="caret"></b></p>
-          </a>
-          <div class="collapse " id="pagesmarque">
-            <ul class="nav">
-              <li>
-                <a href="marques-new">
-                  <span class="sidebar-mini-icon"><i class="nc-icon nc-simple-add"></i></span>
-                  <span class="sidebar-normal"> Nouveau marque </span>
-                </a>
-              </li>
-              <li>
-                <a href="marques">
-                  <span class="sidebar-mini-icon"><i class="nc-icon nc-bullet-list-67"></i></span>
-                  <span class="sidebar-normal"> Liste marques </span>
                 </a>
               </li>
             </ul>
@@ -204,7 +168,7 @@
             </ul>
           </div>
         </li>
-        <li>
+        <li *ngIf="currentUser?.typeuser_id == 1">
           <a data-toggle="collapse" href="#SiteVille">
             <i class="nc-icon location_pin"></i>
             <i class="now-ui-icons location_pin"></i>
@@ -227,7 +191,7 @@
             </ul>
           </div>
         </li>
-        <li>
+        <li *ngIf="currentUser?.typeuser_id == 1">
           <a data-toggle="collapse" href="#sitePays">
             <i class="now-ui-icons location_map-big"></i>
             <p>Site de pays<b class="caret"></b></p>
@@ -274,7 +238,7 @@
         <li>
           <a data-toggle="collapse" href="#pagesuser">
             <i class="now-ui-icons users_circle-08"></i>
-            <p>Adminis <b class="caret"></b></p>
+            <p>Utilisateurs <b class="caret"></b></p>
           </a>
           <div class="collapse " id="pagesuser">
             <ul class="nav">

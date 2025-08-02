@@ -1,195 +1,185 @@
 <div class="wrapper ">
-    <app-header></app-header>
-    <div class="main-panel">
-      <!-- Navbar -->
-      <app-nav></app-nav>
-      <!-- End Navbar -->
-      <div class="content">
-        <div class="page-header mt-4 clear-filter page-header-small"
+  <app-header></app-header>
+  <div class="main-panel">
+    <!-- Navbar -->
+    <app-nav></app-nav>
+    <!-- End Navbar -->
+    <div class="content">
+      <div class="page-header mt-4 clear-filter page-header-small"
         style="background-image:url('assets/images/black.jpg'); background-size: 100% 100%;">
-            <div class="page-header-image" 
-            style="background-image:url('assets/images/black.jpg'); background-size: 100% 100%;">
-            </div>
-            <div class="container">
-                <div class="photo-container">
-                  <img src="assets/images/shop10.png" class="rounded-circle bg-white img-raised border border-success" width="100px" alt="">
-                </div>
-                <h3 class="title">Bintou DIONE</h3>
-                <p class="category">E-commerce</p>
-              
-            </div>
+        <div class="page-header-image"
+          style="background-image:url('assets/images/black.jpg'); background-size: 100% 100%;">
         </div>
-        <div class="row">
-          <div class="col-md-12 mt-4">
-            <div class="card">
-                <div class="card-header">
-                  <ul class="nav nav-tabs justify-content-center" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" data-toggle="tab" href="#tabs1" role="tab">
-                        <i class="now-ui-icons shopping_shop"></i> Tableau de Bords
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" data-toggle="tab" href="#tabs2" role="tab">
-                        <i class="nc-icon nc-bag-16"></i> Produits
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" data-toggle="tab" href="#tabs4" role="tab">
-                        <i class="nc-icon nc-shop"></i> Détails Boutique
-                      </a>
-                    </li>
-                  </ul>
+        <div class="container">
+          <div class="photo-container">
+            <img src="assets/images/shop10.png" class="rounded-circle bg-white img-raised border border-success"
+              width="100px" alt="">
+          </div>
+          <h3 class="title">{{boutiqueSelected?.nom}}</h3>
+          <p class="category">E-commerce</p>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mt-4">
+          <div class="card">
+            <div class="card-header">
+              <ul class="nav nav-tabs justify-content-center" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#tabs1" role="tab">
+                    <i class="now-ui-icons shopping_shop"></i> Tableau de Bords
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#tabs2" role="tab">
+                    <i class="nc-icon nc-bag-16"></i> Produits
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#tabs4" role="tab">
+                    <i class="nc-icon nc-shop"></i> Détails Boutique
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <!-- Tab panes -->
+              <div class="tab-content text-center">
+                <div class="tab-pane active" id="tabs1" role="tabpanel">
+                  {{boutiqueSelected?.nom}}
                 </div>
-                <div class="card-body">
-                  <!-- Tab panes -->
-                  <div class="tab-content text-center">
-                    <div class="tab-pane active" id="tabs1" role="tabpanel">
-                        bonjour 01
+                <div class="tab-pane" id="tabs2" role="tabpanel">
+                  <table class="table table-bordered">
+                    <thead class="thead-light">
+                      <tr>
+                        <th>Produit</th>
+                        <th>Stocke</th>
+                        <th>Prix unitaire</th>
+                        <th>Prix de vente</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let boutique of boutiqueSelected?.produit">
+                        <td>
+                          <div class="col-md-7 col-7">
+                            {{boutique?.nom}} <br />
+                            <span class="text-muted">
+                              <small>
+                                <i class="nc-icon nc-check-2"></i> {{boutique?.statut}}
+                              </small>
+                            </span>
+                          </div>
+                        </td>
+                        <td>{{boutique?.quantite}}</td>
+                        <td>{{boutique?.prix_unitaire}}</td>
+                        <td>{{boutique?.prix_de_vente_unitaire}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tab-pane" id="tabs3" role="tabpanel">
+                  03
+                </div>
+                <div class="tab-pane" id="tabs4" role="tabpanel">
+                  <div class="row">
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="nc-icon nc-shop"></i> Nom Boutique</span>
+                      </div>
+                      <div class="col-6">
+                        {{boutiqueSelected?.nom}}
+                      </div>
                     </div>
-                    <div class="tab-pane" id="tabs2" role="tabpanel">
-                        <table class="table table-bordered">
-                            <thead class="thead-light">
-                                <tr>
-                                    <th>Produit</th>
-                                    <th>Postulée le</th>
-                                    <th>Stocke</th>
-                                    <th>Prix</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="row">
-                                          <div class="col-md-2 col-2">
-                                            <div class="avatar">
-                                              <img src="assets/images/2147949844.jpg" alt="Circle Image" class="rounded img-raised img-no-padding img-responsive">
-                                            </div>
-                                          </div>
-                                          <div class="col-md-7 col-7">
-                                            Nom_Produit <br/>
-                                            <span class="text-muted">
-                                                <small> 
-                                                    <i class="nc-icon nc-check-2"></i> activée 
-                                                </small>
-                                            </span>
-                                          </div>
-                                        </div>
-                                    </td>
-                                    <td>8 Juin 2025</td>
-                                    <td>284 </td>
-                                    <td>3.000 F.cfa</td>
-                                    <td>
-                                        <a href="products-modifier" class="btn btn-success btn-hover-success btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>
-                                        <a href="products-voir" class="btn btn-dark btn-hover-dark btn-round btn-sm m-1"> <i class="nc-icon nc-single-copy-04"></i> Voir </a>
-                                        <button class="btn btn-danger btn-hover-danger btn-round btn-sm m-1"> <i class="nc-icon nc-simple-remove"></i> Suprimer </button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <!-- <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="nc-icon nc-shop"></i> Pseudo Boutique</span>
+                      </div>
+                      <div class="col-6">
+                        {{boutiqueSelected?.nom}}
+                      </div>
+                    </div> -->
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="nc-icon nc-mobile"></i> Numero téléphone</span>
+                      </div>
+                      <div class="col-6">
+                        {{boutiqueSelected?.telephone}}
+                      </div>
                     </div>
-                    <div class="tab-pane" id="tabs3" role="tabpanel">
-                        03
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="nc-icon nc-email-85"></i> adresse email</span>
+                      </div>
+                      <div class="col-6">
+                        {{boutiqueSelected?.email}}
+                      </div>
                     </div>
-                    <div class="tab-pane" id="tabs4" role="tabpanel">
-                        <div class="row">
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="nc-icon nc-shop"></i> Nom Boutique</span>
-                            </div>
-                            <div class="col-6">
-                              Nom_Boutique
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="nc-icon nc-shop"></i> Pseudo Boutique</span>
-                            </div>
-                            <div class="col-6">
-                              Pseudo_Boutique
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="nc-icon nc-mobile"></i> Numero téléphone</span>
-                            </div>
-                            <div class="col-6">
-                              +221 000 00 00 00
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="nc-icon nc-email-85"></i> adresse email</span>
-                            </div>
-                            <div class="col-6">
-                              ojklmbmetanova.com
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="now-ui-icons location_pin"></i> Adresse complet</span>
-                            </div>
-                            <div class="col-6">
-                              Sénégal, Dakar, Kheurmassa
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="now-ui-icons location_pin"></i> Adresse Seconde</span>
-                            </div>
-                            <div class="col-6">
-                              Sénégal, Dakar, Fass HLM
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="nc-icon nc-map-big"></i> Ville</span>
-                            </div>
-                            <div class="col-6">
-                              Dakar
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="nc-icon nc-map-big"></i> Quartier</span>
-                            </div>
-                            <div class="col-6">
-                              Kheurmassa
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="nc-icon nc-map-big"></i> Rue</span>
-                            </div>
-                            <div class="col-6">
-                              8756
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="nc-icon nc-map-big"></i> Porte</span>
-                            </div>
-                            <div class="col-6">
-                              4785
-                            </div>
-                          </div>
-                          <div class="col-md-6 row mt-2 mb-3">
-                            <div class="col-6 text-dark text-uppercase">
-                              <span class="badge badge-default"><i class="now-ui-icons location_pin"></i> Lien Map</span>
-                            </div>
-                            <div class="col-6">
-                              Sénégal, Dakar, Kheurmassa
-                            </div>
-                          </div>
-                        </div>
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="now-ui-icons location_pin"></i> Adresse
+                          complet</span>
+                      </div>
+                      <div class="col-6">
+                        {{boutiqueSelected?.pays}}, {{boutiqueSelected?.ville}}, {{boutiqueSelected?.quartier}}
+                      </div>
                     </div>
+                    <!-- <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="now-ui-icons location_pin"></i> Adresse
+                          Seconde</span>
+                      </div>
+                      <div class="col-6">
+                        Sénégal, Dakar, Fass HLM
+                      </div>
+                    </div> -->
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="nc-icon nc-map-big"></i> Ville</span>
+                      </div>
+                      <div class="col-6">
+                        {{boutiqueSelected?.ville}}
+                      </div>
+                    </div>
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="nc-icon nc-map-big"></i> Quartier</span>
+                      </div>
+                      <div class="col-6">
+                        {{boutiqueSelected?.quartier}}
+                      </div>
+                    </div>
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="nc-icon nc-map-big"></i> Rue</span>
+                      </div>
+                      <div class="col-6">
+                        {{boutiqueSelected?.rue}}
+                      </div>
+                    </div>
+                    <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="nc-icon nc-map-big"></i> Porte</span>
+                      </div>
+                      <div class="col-6">
+                        {{boutiqueSelected?.porte}}
+                      </div>
+                    </div>
+                    <!-- <div class="col-md-6 row mt-2 mb-3">
+                      <div class="col-6 text-dark text-uppercase">
+                        <span class="badge badge-default"><i class="now-ui-icons location_pin"></i> Lien Map</span>
+                      </div>
+                      <div class="col-6">
+                        Sénégal, Dakar, Kheurmassa
+                      </div>
+                    </div> -->
                   </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <app-footer></app-footer>
     </div>
+    <app-footer></app-footer>
   </div>
+</div>

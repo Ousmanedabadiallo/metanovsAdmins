@@ -74,6 +74,7 @@ export class ProduitsmodComponent {
         statut: this.formeBuilder.control(result.statut)
       });
     });
+    this.get_categorie();
   }
 
   get_categorie() {

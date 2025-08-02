@@ -19,6 +19,18 @@ export class UserService {
     return this.httpClient.post(this.url_ApiRest + 'Register', data);
   }
 
+  public getAdmin() {
+    return this.httpClient.get(this.url_ApiRest + 'GetAdmin');
+  }
+
+  public getBoutiqueUser() {
+    return this.httpClient.get(this.url_ApiRest + 'GetBoutiqueUser');
+  }
+
+  public getClientUser() {
+    return this.httpClient.get(this.url_ApiRest + 'GetClientUser');
+  }
+
   public getUser() {
     return this.httpClient.get(this.url_ApiRest + 'Users');
   }

@@ -27,7 +27,7 @@
             <div class="col-md-8 ml-auto mr-auto">
               <div class="card card-upgrade">
                 <div class="card-header text-center">
-                  <h4 class="card-title">Nom_Catégories</h4>
+                  <h4 class="card-title">{{categSelected?.designation}}</h4>
                     <p class="card-category">
                         
                     </p>
@@ -42,23 +42,19 @@
                       <tbody>
                         <tr>
                           <td>Nom</td>
-                          <td class="text-center">Nom_Catégories</td>
-                        </tr>
-                        <tr>
-                          <td><i class="nc-icon nc-shop"></i> Boutique</td>
-                          <td class="text-center">13</td>
+                          <td class="text-center">{{categSelected?.designation}}</td>
                         </tr>
                         <tr>
                           <td><i class="nc-icon nc-bag-16"></i> Produits</td>
-                          <td class="text-center">7</td>
+                          <td class="text-center">{{categSelected?.produit.length}}</td>
                         </tr>
                         <tr>
                           <td><i class="nc-icon nc-paper"></i> Description de catégorie</td>
-                          <td class="text-center"><i class="nc-icon nc-check-2 text-success"></i></td>
+                          <td class="text-center">{{categSelected?.description}}</td>
                         </tr>
                       </tbody>
                     </table>
-                  </div>à
+                  </div>
                 </div>
               </div>
             </div>

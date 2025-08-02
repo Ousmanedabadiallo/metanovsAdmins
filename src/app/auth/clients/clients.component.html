@@ -37,7 +37,8 @@
                         </th>
                       </thead>
                       <tbody>
-                        <tr>
+                        <tr *ngIf="allClients?.length == 0"><p>Vous n'avez pas de client enregistrer</p></tr>
+                        <tr *ngFor="let client of allClients">
                           <td>
                             <div class="row">
                               <div class="col-4">
@@ -46,7 +47,7 @@
                                 </div>
                               </div>
                               <div class="col-7">
-                                Nom_Client
+                                {{client?.nom}} {{client?.prenom}}
                                 <br />
                                 <span class="text-muted"><small> <i class="nc-icon nc-check-2"></i> Active</small></span>
                               </div>
@@ -56,15 +57,15 @@
                             </div>                           
                           </td>
                           <td>
-                             +221 000 00 00 00 <br>
-                             bonjour@metanova.com
+                             {{client?.telephone}} <br>
+                             {{client?.email}}
                           </td>
                           <td>
-                            Sénégal, Dakar, Kheurmassa, <br> Rue : 1255, Porte : 258
+                            {{client?.pays}}, {{client?.ville}}, {{client?.quartier}}, <br> Rue : {{client?.rue}}, Porte : {{client?.porte}}
                           </td>
                           <td class="text-right">
-                            <a href="clients-modifier" class="btn btn-success btn-outline-success  btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>
-                            <a href="clients-voir" class="btn btn-primary btn-outline-primary  btn-round btn-sm m-1"> <i class="nc-icon nc-single-copy-04"></i> Voir </a>
+                            <a routerLink="/clients-modifier/{{client?.id}}" class="btn btn-success btn-outline-success  btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>
+                            <a routerLink="/clients-voir/{{client?.id}}" class="btn btn-primary btn-outline-primary  btn-round btn-sm m-1"> <i class="nc-icon nc-single-copy-04"></i> Voir </a>
                             <button class="btn btn-danger btn-outline-danger btn-round btn-sm m-1"> <i class="nc-icon nc-simple-remove"></i> Suprimer </button>
                           </td>
                         </tr>

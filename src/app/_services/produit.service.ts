@@ -16,6 +16,10 @@ export class ProduitService {
     return this.httpClient.get(this.url_ApiRest + 'Produit');
   }
 
+  public get_ProduitByBoutiqueId(id: any) {
+    return this.httpClient.get(this.url_ApiRest + 'ProduitBoutiqueId/' + id);
+  }
+
   public get_Id_Produit(id: any) {
     return this.httpClient.get(this.url_ApiRest + 'Produit/' + id);
   }

@@ -35,7 +35,7 @@
                         </th>
                       </thead>
                       <tbody>
-                        <tr *ngFor="let user of currentUser">
+                        <tr *ngFor="let user of allUsers">
                           <td>
                             <div class="row">
                               <div class="col-4">
@@ -44,9 +44,9 @@
                                 </div>
                               </div>
                               <div class="col-7">
-                                {{user.nom}} {{user.prenom}}
+                                {{user?.nom}} {{user?.prenom}}
                                 <br />
-                                <span class="text-muted"><small> <i class="nc-icon nc-check-2"></i> Active</small></span>
+                                <span class="text-muted"><small> <i class="nc-icon nc-check-2"></i> {{user?.statut}}</small></span>
                               </div>
                               <div class="col-md-3 col-3 text-right">
                                 
@@ -54,11 +54,11 @@
                             </div>
                           </td>
                           <td>
-                             {{user.telephone}} <br>
-                             {{user.email}}
+                             {{user?.telephone}} <br>
+                             {{user?.email}}
                           </td> 
                           <td>
-                            {{user.pays}}, {{user.ville}}, {{user.quartier}}, <br> Rue : {{user.rue}}, Porte : {{user.porte}}
+                            {{user?.pays}}, {{user?.ville}}, {{user?.quartier}}, <br> Rue : {{user?.rue}}, Porte : {{user?.porte}}
                           </td>
                           <td class="text-right">
                             <a routerLink="/users-modifier/{{user?.id}}" class="btn btn-success btn-outline-success  btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>

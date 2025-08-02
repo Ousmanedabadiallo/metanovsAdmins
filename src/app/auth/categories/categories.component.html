@@ -36,21 +36,14 @@
                     <tbody>
                       <tr *ngFor="let categorie of categories">
                         <td>
-                          <div class="row">
-                            <div class="col-md-2 col-2">
-                              <div class="avatar">
-                                <img src="assets/images/2147949844.jpg" alt="Circle Image" class="rounded img-raised img-no-padding img-responsive">
-                              </div>
-                            </div>
                             <div class="col-md-7 col-7">
                               {{categorie.designation}} 
-                              <br />
-                              <span class="text-muted"><small> <i class="nc-icon nc-check-2"></i> Active</small></span>
                             </div>
-                            <div class="col-md-3 col-3 text-right">
+                        </td>
+                        <td>
+                            <div class="col-md-7 col-7">
                               {{categorie.description}} 
                             </div>
-                          </div>                            
                         </td>
                         <td class="text-right">
                           <a routerLink="/categories-modifier/{{categorie?.id}}" class="btn btn-success btn-outline-success btn-round btn-sm m-1"> <i class="nc-icon nc-caps-small"></i> Modifier </a>
